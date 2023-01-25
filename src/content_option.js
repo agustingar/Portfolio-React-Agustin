@@ -37,35 +37,38 @@ const worktimeline = [{
 },
 ];
 
-const skills = [{
-    name: "React",
+const skills = [
+    {
+    name: "Wordpress",
+    value: 95,
+},
+
+{
+    name: "HTML",
+    value: 90,
+},
+
+{
+    name: "Css",
     value: 90,
 },
 {
-    name: "HTML",
-    value: 85,
-},
-{
-    name: "Wordpress",
+    name: "Javascript",
     value: 80,
 },
 {
-    name: "Css",
-    value: 60,
-},
-{
-    name: "Javascript",
-    value: 85,
+    name: "React",
+    value: 75,
 },
 ];
 
 const services = [{
     title: "Website Designs with Wordpress",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+    description: "Marketing agency where I was in charge of making websites for real clients using Wordpress",
 },
 {
     title: "Programing projects",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+    description: "Master with more than 1200 hours of full stack real-world oriented projects based on agile methodologies.+30 real-world projects done with a deep focus on MERN and LAMP stacks. Working on real projects applying clean code practices and scalability patterns.Using agile development techniques (Agile, Scrum).",
 },
 {
     title: "Marketing Strategy",

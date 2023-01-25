@@ -9,7 +9,7 @@ import {
   skills,
   services,
 } from "../../content_option";
-
+import AGUSTINGARCIA_CV from "../../assets/pdf/Agustin Garcia CV.pdf";
 export const About = () => {
   return (
     <HelmetProvider>
@@ -95,6 +95,18 @@ export const About = () => {
           </Col>
         </Row>
       </Container>
+      <a href={AGUSTINGARCIA_CV} download >
+        <div class="button justify-content-center">
+          <div class="box">D</div>
+          <div class="box">O</div>
+          <div class="box">W</div>
+          <div class="box">N</div>
+          <div class="box">L</div>
+          <div class="box">O</div>
+          <div class="box">A</div>
+          <div class="box">D</div>
+        </div>
+      </a>
     </HelmetProvider>
   );
 };
