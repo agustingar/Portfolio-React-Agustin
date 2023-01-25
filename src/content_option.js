@@ -17,7 +17,7 @@ const introdata = {
 };
 
 const dataabout = {
-    title: "About my self",
+    title: "About myself",
     aboutme:  "I'm passionate about learn new things, new challenges and create projects that can improve people's lives. I also like read new information for the technologies. 2023 Goals: Learn more about apps developments.Life Hack: Explore with knowledge. Fun fact: I love to play guitar and play football"
 };
 const worktimeline = [{
@@ -77,12 +77,12 @@ const services = [{
 ];
 
 const dataportfolio = [{
-    img: "https://picsum.photos/id/60/400/500/?grayscale",
+    img: "https://picsum.photos/id/1079/400/550/?grayscale",
     desctiption: "Calculator with Javascript.",
     link: "https://agustingar.github.io/calculator/",
 },
 {
-    img: 'https://picsum.photos/id/119/500/450',
+    img: 'https://picsum.photos/id/119/600/550',
     desctiption: " Gif 4 U",
     link: "https://challenge-agustin.vercel.app",
 },
@@ -92,18 +92,18 @@ const dataportfolio = [{
     link: "https://vieiraraba.github.io/max-clicks-in10s/",
 },
 {
-    img: 'https://picsum.photos/id/304/400/700/',
+    img: 'https://picsum.photos/id/532/400/700/',
     desctiption: "Melody Music Stream",
     link: "https://melody-music-stream-front.vercel.app",
 },
 
 {
-    img: "https://picsum.photos/id/6/400/400/?grayscale",
+    img: "https://picsum.photos/id/6/600/550/?grayscale",
     desctiption: "MgCollection (Wordpress)",
     link: "https://mgcollection.es",
 },
 {
-    img: "https://picsum.photos/id/334/450/400/?grayscale",
+    img: "https://picsum.photos/id/334/550/610/?grayscale",
     desctiption: "  Spotify Clone Front",
     link: "https://spoty-theta.vercel.app/",
 },
@@ -119,7 +119,7 @@ const dataportfolio = [{
     link: "https://melocottonstore.es",
 },
 {
-    img: "https://picsum.photos/400/506?grayscale",
+    img: "https://picsum.photos/400/550?grayscale",
     desctiption: "Portfolio",
     link: "https://agustingarciallorca.com",
 },
