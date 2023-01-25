@@ -35,12 +35,16 @@ section {
     min-height: 700px;
     height: 100vh;
     margin-top: -60px;
+
+}
+.title {
+    color: var(--text-color-4);
 }
 
 @media (max-width:991.98px) {
     .intro_sec {
         display: block;
-        height: auto!important;
+        height: auto !important;
     }
 }
 
@@ -50,6 +54,7 @@ section {
 }
 
 @media (max-width:991.98px) {
+
     .intro_sec .text,
     .intro_sec .h_bg-image {
         width: 100%;
@@ -70,7 +75,7 @@ section {
 }
 
 .intro_sec .intro .feature .wrap-icon {
-    background: 0 0!important;
+    background: 0 0 !important;
     width: auto;
     height: auto;
     margin-bottom: 0;
@@ -115,16 +120,19 @@ section {
 }
 
 .ac_btn:hover {
+    background-color: rgb(255, 255, 255);
     box-shadow: 8px 8px 0px var(--text-color), -8px -8px 0px var(--text-color);
 }
 
 .ac_btn:hover .one {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
+
 }
 
 .ac_btn:hover .two {
     transform: translate3d(0px, 0px, 0px);
+
 }
 
 .ac_btn:hover .three {
@@ -153,24 +161,30 @@ section {
 }
 
 .ac_btn .two {
-    background-color: var(--primary-color);
+    background-color: #fff;
     transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -3;
 }
 
 .ac_btn .three {
-    background-color: var(--secondary-color);
+    background-color: var(--text-color-4);
     z-index: -2;
     transition: all 0.7s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -3;
 }
 
 #button_p {
-    background: var(--secondary-color);
+    background-color: #fff;
+    color: #248d67;
+}
+
+#button_p:hover {
+    background-color: var(--text-color-4);
     color: var(--primary-color);
 }
 
 #button_h:hover {
+    background-color: var(--text-color-4);
     color: var(--primary-color)
 }
 
@@ -183,7 +197,6 @@ section {
     width: 250px;
     height: 220px;
     border-radius: 100%;
-    /* mix-blend-mode: multiply; */
     background-color: #2f514e;
     z-index: 9999999999;
     display: flex;
@@ -198,6 +211,7 @@ section {
         min-height: 75vh;
         margin-bottom: 30px;
     }
+
     .intro_sec .h_bg-image .block {
         top: unset;
         bottom: 0;

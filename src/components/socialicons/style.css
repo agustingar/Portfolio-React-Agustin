@@ -51,6 +51,9 @@
     position: absolute;
     background-color: var(--text-color);
 }
+.fol{
+color: var(--text-color-4) !important;
+}
 
 @media only screen and (max-width: 991px) {
     .stick_follow_icon {
