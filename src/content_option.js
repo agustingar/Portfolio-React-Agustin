@@ -12,7 +12,7 @@ const introdata = {
         second: "I code cool websites",
         third: "I develop React apps",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "",
     your_img_url: `${img}`,
 };
 
