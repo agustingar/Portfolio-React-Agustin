@@ -89,7 +89,7 @@ const dataportfolio = [{
 {
     img: "https://picsum.photos/id/96/400/600/",
     desctiption: "Max Clicks in 10s",
-    link: "https://vieiraraba.github.io/max-clicks-in10s/",
+    link: "https://maxclicks.vercel.app",
 },
 {
     img: 'https://picsum.photos/id/532/400/700/',
