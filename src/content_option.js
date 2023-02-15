@@ -20,7 +20,12 @@ const dataabout = {
     title: "About myself",
     aboutme:  "I'm passionate about learn new things, new challenges and create projects that can improve people's lives. I also like read new information for the technologies. 2023 Goals: Learn more about apps developments.Life Hack: Explore with knowledge. Fun fact: I love to play guitar and play football"
 };
-const worktimeline = [{
+const worktimeline = [
+    {
+    jobtitle: "Anartxy",
+    where: "Pobla de Vallbona(Valencia)",
+    date: "2023 - actualy",
+},{
     jobtitle: "Assembler Institute of Technology",
     where: "Remote",
     date: "2022 - 2022",
