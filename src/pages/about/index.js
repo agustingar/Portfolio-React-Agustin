@@ -9,7 +9,7 @@ import {
   skills,
   services,
 } from "../../content_option";
-import AGUSTINGARCIA_CV from "../../assets/pdf/Agustin Garcia CV.pdf";
+import AgustinGarciaCV from "../../assets/pdf/AgustinGarciaCV.pdf";
 export const About = () => {
   return (
     <HelmetProvider>
@@ -95,7 +95,7 @@ export const About = () => {
           </Col>
         </Row>
       </Container>
-      <a href={AGUSTINGARCIA_CV} download >
+      <a href={AgustinGarciaCV} download >
         <div class="button justify-content-center">
           <div class="box">D</div>
           <div class="box">O</div>
