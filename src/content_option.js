@@ -77,7 +77,7 @@ const services = [{
 },
 {
     title: "Marketing Strategy",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+    description: "El paso de cebra is a brand in the wine sector, innovative in both its marketing strategy and product.  ",
 },
 ];
 
