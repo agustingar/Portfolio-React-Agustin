@@ -24,7 +24,7 @@ const worktimeline = [
     {
     jobtitle: "Anartxy",
     where: "Pobla de Vallbona(Valencia)",
-    date: "2023 - actualy",
+    date: "2023 - 2023",
 },{
     jobtitle: "Assembler Institute of Technology",
     where: "Remote",
