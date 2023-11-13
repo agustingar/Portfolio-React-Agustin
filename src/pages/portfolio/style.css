@@ -23,6 +23,8 @@
 
 .po_item img {
     max-width: 100%;
+    min-height: 300px;
+    object-fit: cover;
 }
 
 .po_item .content {

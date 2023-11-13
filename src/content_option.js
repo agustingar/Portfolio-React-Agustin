@@ -18,53 +18,53 @@ const introdata = {
 
 const dataabout = {
     title: "About myself",
-    aboutme:  "I'm passionate about learn new things, new challenges and create projects that can improve people's lives. I also like read new information for the technologies. 2023 Goals: Learn more about apps developments.Life Hack: Explore with knowledge. Fun fact: I love to play guitar and play football"
+    aboutme: "I'm passionate about learn new things, new challenges and create projects that can improve people's lives. I also like read new information for the technologies. 2023 Goals: Learn more about apps developments.Life Hack: Explore with knowledge. Fun fact: I love to play guitar and play football"
 };
 const worktimeline = [
     {
-    jobtitle: "Anartxy",
-    where: "Pobla de Vallbona(Valencia)",
-    date: "2023 - 2023",
-},{
-    jobtitle: "Assembler Institute of Technology",
-    where: "Remote",
-    date: "2022 - 2022",
-},
-{
-    jobtitle: "Agma",
-    where: "Valencia",
-    date: "2020 - 2022",
-},
-{
-    jobtitle: "Radoo",
-    where: "Valencia",
-    date: "2020 - 2021",
-},
+        jobtitle: "Anartxy",
+        where: "Pobla de Vallbona(Valencia)",
+        date: "2023 - 2023",
+    }, {
+        jobtitle: "Assembler Institute of Technology",
+        where: "Remote",
+        date: "2022 - 2022",
+    },
+    {
+        jobtitle: "Agma",
+        where: "Valencia",
+        date: "2020 - 2022",
+    },
+    {
+        jobtitle: "Radoo",
+        where: "Valencia",
+        date: "2020 - 2021",
+    },
 ];
 
 const skills = [
     {
-    name: "Wordpress",
-    value: 95,
-},
+        name: "Wordpress",
+        value: 95,
+    },
 
-{
-    name: "HTML",
-    value: 90,
-},
+    {
+        name: "HTML",
+        value: 90,
+    },
 
-{
-    name: "Css",
-    value: 90,
-},
-{
-    name: "Javascript",
-    value: 80,
-},
-{
-    name: "React",
-    value: 75,
-},
+    {
+        name: "Css",
+        value: 90,
+    },
+    {
+        name: "Javascript",
+        value: 80,
+    },
+    {
+        name: "React",
+        value: 75,
+    },
 ];
 
 const services = [{
@@ -82,7 +82,7 @@ const services = [{
 ];
 
 const dataportfolio = [{
-    img: "https://picsum.photos/id/1079/400/550/?grayscale",
+    img: "https://images.unsplash.com/photo-1625225233840-695456021cde?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FsY3VsYXRvcnxlbnwwfHwwfHx8MA%3D%3D",
     desctiption: "Calculator with Javascript.",
     link: "https://agustingar.github.io/calculator/",
 },
@@ -103,30 +103,50 @@ const dataportfolio = [{
 },
 
 {
-    img: "https://picsum.photos/id/6/600/550/?grayscale",
+    img: "https://mgcollection.es/wp-content/uploads/2022/06/Disen%CC%83o-sin-ti%CC%81tulo-46-copia.png",
     desctiption: "MgCollection (Wordpress)",
     link: "https://mgcollection.es",
 },
 {
-    img: "https://picsum.photos/id/334/550/610/?grayscale",
-    desctiption: "  Spotify Clone Front",
+    img: "https://www.silicon.es/wp-content/uploads/2022/09/Spotify.jpg",
+    desctiption: "Spotify Clone Front",
     link: "https://spoty-theta.vercel.app/",
 },
 
 {
-    img: "https://picsum.photos/id/445/400/550/?grayscale",
+    img: "https://play-lh.googleusercontent.com/C7PAec5b_gc2i-ADU04Tn9sQLx6trb8UeiyC7BO4syLA61L0biNQKicB7eHR3ZONQFU",
     desctiption: "Prolink(Wordpress)",
     link: "https://prolink.es",
 },
 {
-    img: "https://picsum.photos/id/535/400/",
+    img: "https://farmaciaplayasanjuan.com/wp-content/uploads/2023/07/IMG_5769-min-scaled.jpg",
     desctiption: "Farmacia Playa de San Juan (Wordpress)",
     link: "https://farmaciaplayasanjuan.com",
 },
 {
-    img: "https://picsum.photos/400/550?grayscale",
-    desctiption: "Portfolio",
-    link: "https://agustingarciallorca.com",
+    img: "https://www.tapiter.es/wp-content/uploads/2020/02/LOGO-TAPITER-Fondo-transparente-PNG.png",
+    desctiption: "Tapiter (Wordpress)",
+    link: "https://tapiter.es",
+},
+{
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa38K_c3eDvrZE6g1ZK-KQVHnEjulcHAam30PeYE9t_w3ZMJYYl_QaX4k5f8sMCG-96UA&usqp=CAU",
+    desctiption: "Radoo (Wordpress)",
+    link: "https://radoo.app",
+},
+{
+    img: "https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2021/03/0-1.jpg?fit=1200%2C960&ssl=1",
+    desctiption: "Laura Sarmiento (Wordpress)",
+    link: "https://laurasarmiento.com",
+},
+{
+    img: "https://www.anartxy.com/65554-thickbox_default/caja-regalo-anartxy.jpg",
+    desctiption: "Anartxy",
+    link: "https://anartxy.es",
+},
+{
+    img: "https://i.pinimg.com/originals/23/93/1c/23931cec40eee9526c3d89206070e7af.jpg",
+    desctiption: "GIF Challenge (React)",
+    link: "https://challenge-agustin-ddht48kvg-agustingar.vercel.app/",
 },
 ];
 
