@@ -148,6 +148,11 @@ const dataportfolio = [{
     desctiption: "GIF Challenge (React)",
     link: "https://challenge-agustin-ddht48kvg-agustingar.vercel.app/",
 },
+{
+    img: "https://lacuartafinanciacion.com/resources/project/59/image-62875772ae06f.png",
+    desctiption: "Jopeful (Wordpress)",
+    link: "https://jopeful.es",
+},
 ];
 
 const contactConfig = {
