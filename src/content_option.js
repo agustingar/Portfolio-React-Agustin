@@ -88,17 +88,17 @@ const dataportfolio = [{
 },
 {
     img: 'https://picsum.photos/id/119/600/550',
-    desctiption: " Gif 4 U",
+    desctiption: " Gif 4 U (React, Firebase)",
     link: "https://challenge-agustin.vercel.app",
 },
 {
     img: "https://picsum.photos/id/96/400/600/",
-    desctiption: "Max Clicks in 10s",
+    desctiption: "Max Clicks in 10s (JS)",
     link: "https://maxclicks.vercel.app",
 },
 {
     img: 'https://picsum.photos/id/532/400/700/',
-    desctiption: "Melody Music Stream",
+    desctiption: "Melody Music Stream (React, NodeJS,MongoDB)",
     link: "https://melody-music-stream-front.vercel.app",
 },
 
@@ -109,7 +109,7 @@ const dataportfolio = [{
 },
 {
     img: "https://www.silicon.es/wp-content/uploads/2022/09/Spotify.jpg",
-    desctiption: "Spotify Clone Front",
+    desctiption: "Spotify Clone Front (React)",
     link: "https://spoty-theta.vercel.app/",
 },
 
@@ -134,20 +134,16 @@ const dataportfolio = [{
     link: "https://radoo.app",
 },
 {
+    img: "https://www.anartxy.com/65554-thickbox_default/caja-regalo-anartxy.jpg",
+    desctiption: "Anartxy (Prestashop, PHP, JS)",
+    link: "https://anartxy.es",
+},
+{
     img: "https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2021/03/0-1.jpg?fit=1200%2C960&ssl=1",
     desctiption: "Laura Sarmiento (Wordpress)",
     link: "https://laurasarmiento.com",
 },
-{
-    img: "https://www.anartxy.com/65554-thickbox_default/caja-regalo-anartxy.jpg",
-    desctiption: "Anartxy",
-    link: "https://anartxy.es",
-},
-{
-    img: "https://i.pinimg.com/originals/23/93/1c/23931cec40eee9526c3d89206070e7af.jpg",
-    desctiption: "GIF Challenge (React)",
-    link: "https://challenge-agustin-ddht48kvg-agustingar.vercel.app/",
-},
+
 {
     img: "https://lacuartafinanciacion.com/resources/project/59/image-62875772ae06f.png",
     desctiption: "Jopeful (Wordpress)",
