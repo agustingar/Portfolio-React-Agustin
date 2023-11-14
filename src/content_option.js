@@ -81,36 +81,37 @@ const services = [{
 },
 ];
 
-const dataportfolio = [{
+const dataportfolio = [
+    {
+        img: "https://picsum.photos/id/96/400/600/",
+        desctiption: "Max Clicks in 10s (JS)",
+        link: "https://maxclicks.vercel.app",
+    },
+    {
     img: "https://images.unsplash.com/photo-1625225233840-695456021cde?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FsY3VsYXRvcnxlbnwwfHwwfHx8MA%3D%3D",
     desctiption: "Calculator with Javascript.",
     link: "https://agustingar.github.io/calculator/",
-},
-{
-    img: 'https://picsum.photos/id/119/600/550',
-    desctiption: " Gif 4 U (React, Firebase)",
-    link: "https://challenge-agustin.vercel.app",
-},
-{
-    img: "https://picsum.photos/id/96/400/600/",
-    desctiption: "Max Clicks in 10s (JS)",
-    link: "https://maxclicks.vercel.app",
 },
 {
     img: 'https://picsum.photos/id/532/400/700/',
     desctiption: "Melody Music Stream (React, NodeJS,MongoDB)",
     link: "https://melody-music-stream-front.vercel.app",
 },
+{
+    img: 'https://picsum.photos/id/119/600/550',
+    desctiption: " Gif 4 U (React, Firebase)",
+    link: "https://challenge-agustin.vercel.app",
+},
 
+{
+    img: "https://img.freepik.com/fotos-premium/tienda-telas-muestra-diversos-textiles-contra-fondo-borroso-vertical-mobile-wallpaper_896558-16413.jpg",
+    desctiption: "Tapiter (Wordpress)",
+    link: "https://tapiter.es",
+},
 {
     img: "https://mgcollection.es/wp-content/uploads/2022/06/Disen%CC%83o-sin-ti%CC%81tulo-46-copia.png",
     desctiption: "MgCollection (Wordpress)",
     link: "https://mgcollection.es",
-},
-{
-    img: "https://www.silicon.es/wp-content/uploads/2022/09/Spotify.jpg",
-    desctiption: "Spotify Clone Front (React)",
-    link: "https://spoty-theta.vercel.app/",
 },
 
 {
@@ -119,14 +120,24 @@ const dataportfolio = [{
     link: "https://prolink.es",
 },
 {
-    img: "https://farmaciaplayasanjuan.com/wp-content/uploads/2023/07/IMG_5769-min-scaled.jpg",
+    img: "https://wallpapers.com/images/hd/minimalist-spotify-art-pm7u7u1c55tgzyhc.jpg",
+    desctiption: "Spotify Clone Front (React)",
+    link: "https://spoty-theta.vercel.app/",
+},
+{
+    img: "https://img.freepik.com/vector-gratis/antecedentes-medicos-limpios_53876-119280.jpg",
     desctiption: "Farmacia Playa de San Juan (Wordpress)",
     link: "https://farmaciaplayasanjuan.com",
 },
 {
-    img: "https://www.tapiter.es/wp-content/uploads/2020/02/LOGO-TAPITER-Fondo-transparente-PNG.png",
-    desctiption: "Tapiter (Wordpress)",
-    link: "https://tapiter.es",
+    img: "https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2021/03/0-1.jpg?fit=1200%2C960&ssl=1",
+    desctiption: "Laura Sarmiento (Wordpress)",
+    link: "https://laurasarmiento.com",
+},
+{
+    img: "https://www.altahousehotel.com/assets/themes/www.altahousehotel.com/img/hero/1688549568_karolina-lesniak-9tE88mb4Bps-unsplash.thigh.webp",
+    desctiption: "Jopeful (Wordpress)",
+    link: "https://jopeful.es",
 },
 {
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa38K_c3eDvrZE6g1ZK-KQVHnEjulcHAam30PeYE9t_w3ZMJYYl_QaX4k5f8sMCG-96UA&usqp=CAU",
@@ -138,17 +149,7 @@ const dataportfolio = [{
     desctiption: "Anartxy (Prestashop, PHP, JS)",
     link: "https://anartxy.es",
 },
-{
-    img: "https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2021/03/0-1.jpg?fit=1200%2C960&ssl=1",
-    desctiption: "Laura Sarmiento (Wordpress)",
-    link: "https://laurasarmiento.com",
-},
 
-{
-    img: "https://lacuartafinanciacion.com/resources/project/59/image-62875772ae06f.png",
-    desctiption: "Jopeful (Wordpress)",
-    link: "https://jopeful.es",
-},
 ];
 
 const contactConfig = {
