@@ -104,14 +104,14 @@ const dataportfolio = [
     },
 
     {
-        img: "https://img.freepik.com/fotos-premium/tienda-telas-muestra-diversos-textiles-contra-fondo-borroso-vertical-mobile-wallpaper_896558-16413.jpg",
-        desctiption: "Tapiter (Wordpress)",
-        link: "https://tapiter.es",
-    },
-    {
         img: "https://mgcollection.es/wp-content/uploads/2022/06/Disen%CC%83o-sin-ti%CC%81tulo-46-copia.png",
         desctiption: "MgCollection (Wordpress)",
         link: "https://mgcollection.es",
+    },
+    {
+        img: "https://img.freepik.com/fotos-premium/tienda-telas-muestra-diversos-textiles-contra-fondo-borroso-vertical-mobile-wallpaper_896558-16413.jpg",
+        desctiption: "Tapiter (Wordpress)",
+        link: "https://tapiter.es",
     },
 
     {
@@ -135,24 +135,24 @@ const dataportfolio = [
         link: "https://laurasarmiento.com",
     },
     {
-        img: "https://www.altahousehotel.com/assets/themes/www.altahousehotel.com/img/hero/1688549568_karolina-lesniak-9tE88mb4Bps-unsplash.thigh.webp",
-        desctiption: "Jopeful (Wordpress)",
-        link: "https://jopeful.es",
-    },
-    {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa38K_c3eDvrZE6g1ZK-KQVHnEjulcHAam30PeYE9t_w3ZMJYYl_QaX4k5f8sMCG-96UA&usqp=CAU",
         desctiption: "Radoo (Wordpress)",
         link: "https://radoo.app",
     },
     {
-        img: "https://www.anartxy.com/65554-thickbox_default/caja-regalo-anartxy.jpg",
-        desctiption: "Anartxy (Shopify)",
-        link: "https://anartxy.es",
-    },
-    {
         img: "https://cbdfanatics.es/cdn/shop/files/verde_100x@2x.png?v=1700562336",
         desctiption: "CBD Fanatics (Shopify)",
         link: "https://cbdfanatics.es",
+    },
+    {
+        img: "https://www.altahousehotel.com/assets/themes/www.altahousehotel.com/img/hero/1688549568_karolina-lesniak-9tE88mb4Bps-unsplash.thigh.webp",
+        desctiption: "Jopeful (Wordpress)",
+        link: "https://jopeful.es",
+    },
+    {
+        img: "https://www.anartxy.com/cdn/shop/files/34A1835_dbf69b63-8cc9-495b-affe-60dc052560e4.jpg?v=1704197456&width=1200&height=600",
+        desctiption: "Anartxy (Shopify)",
+        link: "https://anartxy.es",
     },
 ];
 
