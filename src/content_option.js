@@ -104,9 +104,9 @@ const dataportfolio = [
     },
 
     {
-        img: "https://mgcollection.es/wp-content/uploads/2022/06/Disen%CC%83o-sin-ti%CC%81tulo-46-copia.png",
-        desctiption: "MgCollection (Wordpress)",
-        link: "https://mgcollection.es",
+        img: "https://mariolastyle.es/wp-content/uploads/2023/10/001-CALLE-ESQUINA.jpg",
+        desctiption: "Mariola Style (Wordpress)",
+        link: "https://mariolastyle.es/",
     },
     {
         img: "https://img.freepik.com/fotos-premium/tienda-telas-muestra-diversos-textiles-contra-fondo-borroso-vertical-mobile-wallpaper_896558-16413.jpg",
