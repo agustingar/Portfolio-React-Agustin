@@ -104,6 +104,11 @@ const dataportfolio = [
     },
 
     {
+        img: "https://pilatufitness.com/wp-content/uploads/2021/08/Pilatu_Cadillac_Reformer_01-2-1097x1536.jpg",
+        desctiption: "PilatuFitness(Wordpress)",
+        link: "https://pilatufitness.com",
+    },
+    {
         img: "https://mariolastyle.es/wp-content/uploads/2023/10/001-CALLE-ESQUINA.jpg",
         desctiption: "Mariola Style (Wordpress)",
         link: "https://mariolastyle.es/",
@@ -120,24 +125,29 @@ const dataportfolio = [
         link: "https://prolink.es",
     },
     {
-        img: "https://wallpapers.com/images/hd/minimalist-spotify-art-pm7u7u1c55tgzyhc.jpg",
+        img: "https://www.anartxy.com/cdn/shop/files/34A1835_dbf69b63-8cc9-495b-affe-60dc052560e4.jpg?v=1704197456&width=1200&height=600",
+        desctiption: "Anartxy (Shopify)",
+        link: "https://anartxy.es",
+    },
+    {
+        img: "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/04/spotify-2318979.jpg?tf=3840x",
         desctiption: "Spotify Clone Front (React)",
         link: "https://spoty-theta.vercel.app/",
     },
     {
-        img: "https://img.freepik.com/vector-gratis/antecedentes-medicos-limpios_53876-119280.jpg",
+        img: "https://lanuevaserenidad.com/wp-content/uploads/2023/08/papel-de-la-farmacia-es-clave-en-la-prevencion-de-enfermedades.jpg",
         desctiption: "Farmacia Playa de San Juan (Wordpress)",
         link: "https://farmaciaplayasanjuan.com",
-    },
-    {
-        img: "https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2021/03/0-1.jpg?fit=1200%2C960&ssl=1",
-        desctiption: "Laura Sarmiento (Wordpress)",
-        link: "https://laurasarmiento.com",
     },
     {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa38K_c3eDvrZE6g1ZK-KQVHnEjulcHAam30PeYE9t_w3ZMJYYl_QaX4k5f8sMCG-96UA&usqp=CAU",
         desctiption: "Radoo (Wordpress)",
         link: "https://radoo.app",
+    },
+    {
+        img: "https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2021/03/0-1.jpg?fit=1200%2C960&ssl=1",
+        desctiption: "Laura Sarmiento (Wordpress)",
+        link: "https://laurasarmiento.com",
     },
     {
         img: "https://cbdfanatics.es/cdn/shop/files/verde_100x@2x.png?v=1700562336",
@@ -149,10 +159,11 @@ const dataportfolio = [
         desctiption: "Jopeful (Wordpress)",
         link: "https://jopeful.es",
     },
+ 
     {
-        img: "https://www.anartxy.com/cdn/shop/files/34A1835_dbf69b63-8cc9-495b-affe-60dc052560e4.jpg?v=1704197456&width=1200&height=600",
-        desctiption: "Anartxy (Shopify)",
-        link: "https://anartxy.es",
+        img: "https://dentalcorbella.com/wp-content/uploads/2023/12/carillas-estetica-dental-madrid-dentista-clinica-corbella-7.jpg",
+        desctiption: "Dental Corbella (Wordpress)",
+        link: "https://dentalcorbella.com",
     },
 ];
 
