@@ -22,6 +22,11 @@ const dataabout = {
 };
 const worktimeline = [
     {
+        jobtitle: "Doowebs",
+        where: "Valencia",
+        date: "2024 - actually",
+    },
+    {
         jobtitle: "Anartxy",
         where: "Pobla de Vallbona(Valencia)",
         date: "2023 - 2023",
