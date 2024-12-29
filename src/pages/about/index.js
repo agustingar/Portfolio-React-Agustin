@@ -9,7 +9,7 @@ import {
   skills,
   services,
 } from "../../content_option";
-import AgustinGarciaCV from "../../assets/pdf/AgustinGarcíaCVEnglish.pdf"; 
+import AgustinGarciaCV from "../../assets/pdf/AgustinGarciaCV2025.pdf"; 
 export const About = () => {
   return (
     <HelmetProvider>

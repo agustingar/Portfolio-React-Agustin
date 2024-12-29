@@ -24,7 +24,7 @@ const worktimeline = [
     {
         jobtitle: "Doowebs",
         where: "Valencia",
-        date: "2024 - actually",
+        date: "2024",
     },
     {
         jobtitle: "Anartxy",
