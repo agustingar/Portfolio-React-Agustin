@@ -125,7 +125,7 @@ const dataportfolio = [
     },
 
     {
-        img: "https://play-lh.googleusercontent.com/C7PAec5b_gc2i-ADU04Tn9sQLx6trb8UeiyC7BO4syLA61L0biNQKicB7eHR3ZONQFU",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGq1R6LRnfeKvELP89EifAftFfhsP9XWnCUQ&s",
         desctiption: "Prolink(Wordpress)",
         link: "https://prolink.es",
     },
@@ -140,9 +140,9 @@ const dataportfolio = [
         link: "https://spoty-theta.vercel.app/",
     },
     {
-        img: "https://lanuevaserenidad.com/wp-content/uploads/2023/08/papel-de-la-farmacia-es-clave-en-la-prevencion-de-enfermedades.jpg",
-        desctiption: "Farmacia Playa de San Juan (Wordpress)",
-        link: "https://farmaciaplayasanjuan.com",
+        img: "https://media.licdn.com/dms/image/v2/C4D0BAQGcUISF1fUFAw/company-logo_200_200/company-logo_200_200/0/1631353681286?e=2147483647&v=beta&t=17hvckgk6jv01q41QvbBSUMbWgBOjqADXmLzGLJJKZY",
+        desctiption: "Fenix (Wordpress)",
+        link: "https://fenixstage.com",
     },
     {
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa38K_c3eDvrZE6g1ZK-KQVHnEjulcHAam30PeYE9t_w3ZMJYYl_QaX4k5f8sMCG-96UA&usqp=CAU",
@@ -160,16 +160,31 @@ const dataportfolio = [
         link: "https://cbdfanatics.es",
     },
     {
-        img: "https://www.altahousehotel.com/assets/themes/www.altahousehotel.com/img/hero/1688549568_karolina-lesniak-9tE88mb4Bps-unsplash.thigh.webp",
+        img: "https://lanzadera.es/wp-content/uploads/2023/09/Jopeful_logo1_420x420.png",
         desctiption: "Jopeful (Wordpress)",
         link: "https://jopeful.es",
     },
- 
     {
         img: "https://dentalcorbella.com/wp-content/uploads/2023/12/carillas-estetica-dental-madrid-dentista-clinica-corbella-7.jpg",
         desctiption: "Dental Corbella (Wordpress)",
         link: "https://dentalcorbella.com",
     },
+    {
+        img: "https://s3-eu-west-1.amazonaws.com/tpd/logos/60bf9915fde226000166a596/0x0.png",
+        desctiption: "Valy Cosmetics(Wordpress)",
+        link: " https://valycosmetics.com/",
+    },
+    {
+        img: "https://media.licdn.com/dms/image/v2/D4D22AQGsFsEd7eVz5A/feedshare-shrink_800/feedshare-shrink_800/0/1725359661368?e=2147483647&v=beta&t=v1oyxiqnj9iWN0sVKGl_XwQbsdFUOKb0IRnkjlvL-L0",
+        desctiption: "V3nture Builders (Wordpress)",
+        link: "https://v3nturebuilders.com/",
+    },
+    {
+        img: "https://boconni.com/wp-content/uploads/2024/07/VILLA-PIRINEOS-FISCAL-scaled-1170x653.jpg",
+        desctiption: "Boconni (Wordpress)",
+        link: "https://boconni.com/",
+    },
+
 ];
 
 const contactConfig = {
