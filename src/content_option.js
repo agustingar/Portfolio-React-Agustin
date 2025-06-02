@@ -155,9 +155,9 @@ const dataportfolio = [
         link: "https://laurasarmiento.com",
     },
     {
-        img: "https://cbdfanatics.es/cdn/shop/files/verde_100x@2x.png?v=1700562336",
-        desctiption: "CBD Fanatics (Shopify)",
-        link: "https://cbdfanatics.es",
+        img: "https://greentel.es/wp-content/uploads/2024/12/Just-the-Avocado.png",
+        desctiption: "Greentel (Wordpress)",
+        link: "https://greentel.es",
     },
     {
         img: "https://lanzadera.es/wp-content/uploads/2023/09/Jopeful_logo1_420x420.png",
