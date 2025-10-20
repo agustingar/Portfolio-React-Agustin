@@ -4,7 +4,6 @@ const meta = {
     title: "AGUSTIN GARCÍA",
     description: "I’m Agustín García Frontend devloper",
 };
-
 const introdata = {
     title: "I’m Agustín García",
     animated: {
