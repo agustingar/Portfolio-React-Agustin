@@ -1,4 +1,5 @@
 import img from '../src/assets/images/AG.PNG'
+import dermobalImg from '../src/assets/images/dermobal.png'
 const logotext = "AGUSTÍN GARCÍA";
 const meta = {
     title: "AGUSTIN GARCÍA",
@@ -113,14 +114,14 @@ const dataportfolio = [
         link: "https://pilatufitness.com",
     },
     {
-        img: "https://mariolastyle.es/wp-content/uploads/2023/10/001-CALLE-ESQUINA.jpg",
-        desctiption: "Mariola Style (Wordpress)",
-        link: "https://mariolastyle.es/",
+        img: "https://selectyourvet.com/wp-content/uploads/2024/06/logo-letras-verdes-scaled.png",
+        desctiption: "Select Your Vet (Wordpress, Custom Plugin, IA integration)",
+        link: "https://selectyourvet.com/",
     },
     {
-        img: "https://img.freepik.com/fotos-premium/tienda-telas-muestra-diversos-textiles-contra-fondo-borroso-vertical-mobile-wallpaper_896558-16413.jpg",
-        desctiption: "Tapiter (Wordpress)",
-        link: "https://tapiter.es",
+        img: dermobalImg,
+        desctiption: "Dermobal (Wordpress)",
+        link: "https://dermobal.es/",
     },
 
     {
@@ -144,14 +145,14 @@ const dataportfolio = [
         link: "https://fenixstage.com",
     },
     {
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa38K_c3eDvrZE6g1ZK-KQVHnEjulcHAam30PeYE9t_w3ZMJYYl_QaX4k5f8sMCG-96UA&usqp=CAU",
+        img: "https://radoo.app/images/og-image.jpg",
         desctiption: "Radoo (Wordpress)",
         link: "https://radoo.app",
     },
     {
-        img: "https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2021/03/0-1.jpg?fit=1200%2C960&ssl=1",
-        desctiption: "Laura Sarmiento (Wordpress)",
-        link: "https://laurasarmiento.com",
+        img: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/96/a3/71/96a37172-f75e-4ef3-66a0-6e7ce27ec57d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1200x630wa.png",
+        desctiption: "Guardify  (App iOS/Android React Native)",
+        link: "https://ag-marketing.es/portfolio-item/guardify/",
     },
     {
         img: "https://greentel.es/wp-content/uploads/2024/12/Just-the-Avocado.png",
@@ -159,9 +160,9 @@ const dataportfolio = [
         link: "https://greentel.es",
     },
     {
-        img: "https://lanzadera.es/wp-content/uploads/2023/09/Jopeful_logo1_420x420.png",
-        desctiption: "Jopeful (Wordpress)",
-        link: "https://jopeful.es",
+        img: "https://assets.dosfarma.com/transform/d6e65dfc-2d15-453e-b09b-b39fd5eae662/Triptomax-Original-60-Gummies?io=transform:extend,width:600,height:600",
+        desctiption: "Triptomax (Wordpress)",
+        link: "https://triptomax.com",
     },
     {
         img: "https://dentalcorbella.com/wp-content/uploads/2023/12/carillas-estetica-dental-madrid-dentista-clinica-corbella-7.jpg",
