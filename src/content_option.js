@@ -135,7 +135,7 @@ const dataportfolio = [
         link: "https://anartxy.es",
     },
     {
-        img: "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/04/spotify-2318979.jpg?tf=3840x",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXQEY_iIUMy7Wn63UE53yByCCLArmXOsAUrg&s",
         desctiption: "Spotify Clone Front (React)",
         link: "https://spoty-theta.vercel.app/",
     },
