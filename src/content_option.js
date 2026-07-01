@@ -155,9 +155,9 @@ const dataportfolio = [
         link: "https://ag-marketing.es/portfolio-item/guardify/",
     },
     {
-        img: "https://greentel.es/wp-content/uploads/2024/12/Just-the-Avocado.png",
+        img: "https://waqua.es/wp-content/uploads/2026/02/Aire-60-final_2.png",
         desctiption: "Greentel (Wordpress)",
-        link: "https://greentel.es",
+        link: "https://waqua.es",
     },
     {
         img: "https://assets.dosfarma.com/transform/d6e65dfc-2d15-453e-b09b-b39fd5eae662/Triptomax-Original-60-Gummies?io=transform:extend,width:600,height:600",
