@@ -156,7 +156,7 @@ const dataportfolio = [
     },
     {
         img: "https://waqua.es/wp-content/uploads/2026/02/Aire-60-final_2.png",
-        desctiption: "Greentel (Wordpress)",
+        desctiption: "Waqua (Wordpress)",
         link: "https://waqua.es",
     },
     {
