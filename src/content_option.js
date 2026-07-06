@@ -1,5 +1,6 @@
 import img from '../src/assets/images/AG.PNG'
 import dermobalImg from '../src/assets/images/dermobal.png'
+import waquaImg from '../src/assets/images/waqua.png'
 const logotext = "AGUSTÍN GARCÍA";
 const meta = {
     title: "AGUSTIN GARCÍA",
@@ -155,7 +156,7 @@ const dataportfolio = [
         link: "https://ag-marketing.es/portfolio-item/guardify/",
     },
     {
-        img: "https://waqua.es/wp-content/uploads/2026/02/belsara-2c-1.png",
+        img: "waquaImg",
         desctiption: "Waqua (Wordpress)",
         link: "https://waqua.es",
     },
