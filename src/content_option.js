@@ -155,7 +155,7 @@ const dataportfolio = [
         link: "https://ag-marketing.es/portfolio-item/guardify/",
     },
     {
-        img: "https://waqua.es/wp-content/uploads/2026/02/Aire-60-final_2.png",
+        img: "https://waqua.es/wp-content/uploads/2026/02/belsara-2c-1.png",
         desctiption: "Waqua (Wordpress)",
         link: "https://waqua.es",
     },
