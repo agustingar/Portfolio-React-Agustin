@@ -89,9 +89,9 @@ const services = [{
 
 const dataportfolio = [
     {
-        img: "https://picsum.photos/id/96/400/600/",
-        desctiption: "Max Clicks in 10s (JS)",
-        link: "https://maxclicks.vercel.app",
+        img: "https://www.farmaciasoler.com/img/uploads/after-bite-gel-xtreme-20g--2.jpg",
+        desctiption: "AfterBite (Wordpress)",
+        link: "https://afterbite.es",
     },
     {
         img: "https://images.unsplash.com/photo-1625225233840-695456021cde?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FsY3VsYXRvcnxlbnwwfHwwfHx8MA%3D%3D",
@@ -161,7 +161,7 @@ const dataportfolio = [
         link: "https://waqua.es",
     },
     {
-        img: "https://assets.dosfarma.com/transform/d6e65dfc-2d15-453e-b09b-b39fd5eae662/Triptomax-Original-60-Gummies?io=transform:extend,width:600,height:600",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLWXlVV-kTzzU1_SHMscrnTFhQvlORTXzmn0_Bf_e4NQ&s",
         desctiption: "Triptomax (Wordpress)",
         link: "https://triptomax.com",
     },
