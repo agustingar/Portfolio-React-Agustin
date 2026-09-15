@@ -16,6 +16,16 @@ const FILTERS = [
   { id: "app", labelKey: "portfolio.filterApp" },
 ];
 
+const SIZE_CYCLE = ["wide", "tall", "default", "tall", "default", "wide"];
+
+const getSize = (index) => SIZE_CYCLE[index % SIZE_CYCLE.length];
+
+const scrollVariants = {
+  wide: { opacity: 0, y: 48, scale: 0.96 },
+  tall: { opacity: 0, x: -36, scale: 0.97 },
+  default: { opacity: 0, y: 36, scale: 0.98 },
+};
+
 const PortfolioCard = ({ data, index, t }) => {
   const reducedMotion = useReducedMotion();
   const cardRef = useRef(null);
@@ -26,6 +36,8 @@ const PortfolioCard = ({ data, index, t }) => {
   const [hovered, setHovered] = useState(false);
   const title = t(`portfolio.items.${data.key}`);
   const tagsLine = (data.tags || []).join(" • ");
+  const size = getSize(index);
+  const from = scrollVariants[size] || scrollVariants.default;
 
   const handlePointerMove = useCallback(
     (e) => {
@@ -35,10 +47,10 @@ const PortfolioCard = ({ data, index, t }) => {
       const rect = el.getBoundingClientRect();
       const px = (e.clientX - rect.left) / rect.width;
       const py = (e.clientY - rect.top) / rect.height;
-      const xRot = (py - 0.5) * -16;
-      const yRot = (px - 0.5) * 16;
+      const xRot = (py - 0.5) * -10;
+      const yRot = (px - 0.5) * 10;
       setTransform(
-        `perspective(1100px) rotateX(${xRot}deg) rotateY(${yRot}deg) scale3d(1.03, 1.03, 1.03)`
+        `perspective(1100px) rotateX(${xRot}deg) rotateY(${yRot}deg) scale3d(1.02, 1.02, 1.02)`
       );
       setSpotlight({ x: px * 100, y: py * 100 });
     },
@@ -55,15 +67,20 @@ const PortfolioCard = ({ data, index, t }) => {
   return (
     <motion.div
       layout
-      className="po_card_wrap"
-      initial={reducedMotion ? false : { opacity: 0, y: 24, scale: 0.98 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, y: 16, scale: 0.98 }}
-      transition={{ duration: 0.35, ease: EASE_OUT, delay: Math.min(index * 0.04, 0.2) }}
+      className={`po_card_wrap is-${size}`}
+      initial={reducedMotion ? false : from}
+      whileInView={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+      viewport={{ once: true, amount: 0.2 }}
+      exit={{ opacity: 0, scale: 0.96, transition: { duration: 0.25 } }}
+      transition={{
+        duration: reducedMotion ? 0 : 0.7,
+        ease: EASE_OUT,
+        delay: reducedMotion ? 0 : Math.min((index % 6) * 0.06, 0.3),
+      }}
     >
       <a
         ref={cardRef}
-        className={`po_dest_card ${hovered ? "is-active" : ""}`}
+        className={`po_dest_card is-${size} ${hovered ? "is-active" : ""}`}
         href={data.link}
         target="_blank"
         rel="noreferrer"
@@ -73,18 +90,20 @@ const PortfolioCard = ({ data, index, t }) => {
         style={{ transform }}
         aria-label={`${t("portfolio.open")}: ${title}`}
       >
-        <div
-          className="po_dest_bg"
-          style={{ backgroundImage: `url(${data.img})` }}
-        />
+        <div className="po_dest_media">
+          <div
+            className="po_dest_bg"
+            style={{ backgroundImage: `url(${data.img})` }}
+          />
+          <div
+            className="po_dest_spotlight"
+            style={{
+              background: `radial-gradient(circle at ${spotlight.x}% ${spotlight.y}%, rgba(127, 255, 209, 0.2), transparent 42%)`,
+              opacity: hovered && !reducedMotion ? 1 : 0,
+            }}
+          />
+        </div>
         <div className="po_dest_overlay" />
-        <div
-          className="po_dest_spotlight"
-          style={{
-            background: `radial-gradient(circle at ${spotlight.x}% ${spotlight.y}%, rgba(127, 255, 209, 0.24), transparent 42%)`,
-            opacity: hovered && !reducedMotion ? 1 : 0,
-          }}
-        />
         <div className="po_dest_top">
           <span className="po_dest_index">
             {String(index + 1).padStart(2, "0")}

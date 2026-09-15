@@ -1,0 +1,270 @@
+.scroll_story {
+  position: relative;
+  height: calc(var(--story-steps, 3) * 95vh);
+  border-top: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+}
+
+.scroll_story_sticky {
+  position: sticky;
+  top: 60px;
+  height: calc(100dvh - 60px);
+  display: flex;
+  align-items: center;
+  overflow: clip;
+}
+
+.scroll_story_inner {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.15fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.scroll_story_inner--stack {
+  display: block;
+}
+
+.scroll_story_eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-color-4);
+}
+
+.scroll_story_title {
+  margin: 0 0 1rem;
+  font-family: Marcellus, serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.1;
+}
+
+.scroll_story_progress {
+  height: 2px;
+  width: 100%;
+  max-width: 220px;
+  background: color-mix(in srgb, var(--text-color) 14%, transparent);
+  margin-bottom: 0.9rem;
+  overflow: hidden;
+}
+
+.scroll_story_progress span {
+  display: block;
+  height: 100%;
+  background: var(--text-color-4);
+}
+
+.scroll_story_dots {
+  display: flex;
+  gap: 0.45rem;
+  margin-bottom: 1.25rem;
+}
+
+.scroll_story_dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--text-color) 35%, transparent);
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.scroll_story_dot.is-active {
+  background: var(--text-color-4);
+  border-color: var(--text-color-4);
+  transform: scale(1.2);
+}
+
+.scroll_story_panels {
+  position: relative;
+  min-height: 240px;
+}
+
+.scroll_story_panel {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateY(22px);
+  pointer-events: none;
+  transition: opacity 0.45s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll_story_panel.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.scroll_story_tag {
+  margin: 0 0 0.55rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text-color) 55%, transparent);
+}
+
+.scroll_story_panel h3,
+.scroll_story_static_card h3 {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+  line-height: 1.15;
+}
+
+.scroll_story_panel p,
+.scroll_story_static_card p:last-of-type {
+  margin: 0;
+  max-width: 36ch;
+  color: color-mix(in srgb, var(--text-color) 78%, transparent);
+  line-height: 1.55;
+}
+
+.scroll_story_index {
+  display: inline-block;
+  margin-top: 1.1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: var(--text-color-4);
+}
+
+.scroll_story_hint {
+  margin: 1.25rem 0 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text-color) 45%, transparent);
+}
+
+.scroll_story_visual {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  max-height: min(68vh, 560px);
+  border-radius: 1.15rem;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      70% 60% at 50% 40%,
+      color-mix(in srgb, var(--text-color-4) 10%, transparent),
+      transparent 70%
+    ),
+    #0e0e0e;
+  box-shadow:
+    0 28px 60px rgba(0, 0, 0, 0.35),
+    0 0 0 1px color-mix(in srgb, var(--text-color) 10%, transparent);
+}
+
+.scroll_story_media {
+  position: absolute;
+  inset: 8%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(0.96);
+  filter: saturate(1.04) contrast(1.02);
+  transition:
+    opacity 0.45s ease,
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.45s ease;
+}
+
+.scroll_story_media.is-active {
+  opacity: 1;
+  transform: scale(1);
+  filter: saturate(1.08) contrast(1.04) brightness(1.02);
+  animation: none;
+}
+
+.scroll_story_media_shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    transparent 70%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.scroll_story_frame {
+  position: absolute;
+  inset: 12px;
+  border: 1px solid color-mix(in srgb, #fff 22%, transparent);
+  border-radius: 0.85rem;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.scroll_story--static {
+  height: auto;
+  padding: clamp(3.5rem, 8vw, 6rem) 0;
+}
+
+.scroll_story_static_grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.scroll_story_media_wrap {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  margin-bottom: 0.9rem;
+  background:
+    radial-gradient(
+      70% 60% at 50% 40%,
+      color-mix(in srgb, var(--text-color-4) 10%, transparent),
+      transparent 70%
+    ),
+    #0e0e0e;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.scroll_story_static_card .scroll_story_media {
+  position: absolute;
+  inset: 8%;
+  opacity: 1;
+  transform: none;
+  filter: saturate(1.06) contrast(1.03);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: none;
+}
+
+@media (max-width: 991.98px) {
+  .scroll_story_static_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scroll_story_media_wrap {
+    aspect-ratio: 16 / 10;
+    max-height: 320px;
+  }
+
+  .scroll_story_static_card .scroll_story_media {
+    inset: 5% 8%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll_story_panel,
+  .scroll_story_media,
+  .scroll_story_dot {
+    transition: none !important;
+  }
+
+  .scroll_story_media.is-active {
+    animation: none;
+  }
+}

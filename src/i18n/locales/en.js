@@ -75,6 +75,44 @@ const en = {
     aboutCta: "About me",
     ctaBandTitle: "Ready to build something memorable?",
     ctaBandText: "Tell me your idea and let's turn it into a digital product.",
+    folioLabel: "Folio / 2020 — Present",
+    heroLine1: "FULL",
+    heroLine2: "STACK",
+    heroLine3: "DEVELOPER",
+    featuredCount: "Featured projects ({{count}})",
+    visitSite: "Visit site",
+    talkMarquee: "LET'S TALK — LET'S COLLABORATE — SAY HELLO — WANNA START SOMETHING? — ",
+    splitEyebrow: "since 2020",
+    splitLeft: "FullStack",
+    splitRight: "Developer",
+    splitText:
+      "I build websites, ecommerce, and apps: Wordpress, Shopify, PrestaShop, and React Native. Clean code, clear UX, and products that work day to day.",
+    storyEyebrow: "How I work",
+    storyTitle: "Web, ecommerce, and apps in production",
+    story: {
+      craft: {
+        tag: "Web / Wordpress",
+        heading: "Custom sites that load and convert",
+        text: "Landings, corporate sites, and plugins for AG Marketing: Elementor, SEO, bookings, and clean code ready for real clients.",
+      },
+      product: {
+        tag: "Ecommerce",
+        heading: "Stores that sell without friction",
+        text: "Shopify, PrestaShop, and Wordpress Woo: catalog, checkout, and performance built for leads and sales.",
+      },
+      apps: {
+        tag: "Mobile apps",
+        heading: "React Native in the real world",
+        text: "PartFri and Guardify: real flows, APIs, Firebase, Laravel, and AI layers already in production.",
+      },
+    },
+    casesEyebrow: "Selected cases",
+    casesTitle: "Projects with impact",
+    seeCase: "See case",
+    scrollHint: "Scroll to explore",
+    dragHint: "Scroll to move sideways",
+    interestsTitle: "Stack & tools",
+    interestsSubtitle: "What I use to ship products every week.",
     valuesTitle: "What sets me apart",
     valuesSubtitle: "Detail, speed, and real collaboration with clients.",
     values: {
@@ -83,16 +121,16 @@ const en = {
         text: "I ship fast without sacrificing quality or accessibility.",
       },
       craft: {
-        title: "Visual craft",
-        text: "Micro-interactions, typography, and thoughtful composition.",
+        title: "Usable product",
+        text: "Clear flows, performance, and care in every delivery.",
       },
       collab: {
         title: "Clear collaboration",
         text: "Direct communication, frequent demos, and useful feedback.",
       },
     },
-    testimonialsTitle: "Feedback",
-    testimonialsSubtitle: "What people value when working with me.",
+    testimonialsTitle: "Reviews",
+    testimonialsSubtitle: "What clients and teams say about working with me.",
     testimonials: {
       one: {
         quote:
@@ -106,11 +144,31 @@ const en = {
         author: "Marketing team",
         role: "Project Lead",
       },
+      three: {
+        quote:
+          "He shipped the site and booking plugin smoothly. Happy client, deadlines met.",
+        author: "Lechuzas Properties",
+        role: "Real estate client",
+      },
+      four: {
+        quote:
+          "On PartFri and Guardify he solved complex flows with APIs and solid React Native.",
+        author: "AG Marketing",
+        role: "Product / Apps",
+      },
+      five: {
+        quote:
+          "Custom Shopify and Wordpress, direct communication, and measurable sales results.",
+        author: "Retail ecommerce",
+        role: "Founder",
+      },
     },
   },
   about: {
     pageTitle: "About me",
-    aboutTitle: "About myself",
+    aboutTitle: "Who I am",
+    heroEyebrow: "FullStack · Freelance · 2020+",
+    heroTitle: "Code, product, and real clients",
     aboutme:
       "Frontend Developer passionate about learning, taking on challenges, and building products that improve people's lives. I work across custom Wordpress sites, ecommerce, and React Native apps (AG Marketing), with a focus on performance, UX, and visual craft. Fun fact: I love playing guitar and football.",
     timeline: "Work experience",
@@ -122,6 +180,10 @@ const en = {
     nowTitle: "Right now",
     nowText:
       "FullStack Developer freelance since 2020 (Wordpress, PrestaShop, Shopify, and apps). Also shipping AG Marketing products (Guardify / PartFri).",
+    focusLabel: "Focus",
+    focusWeb: "Web & plugins",
+    focusShop: "Ecommerce",
+    focusApps: "React Native apps",
     work: {
       freelance: {
         company: "Freelance",
@@ -253,19 +315,22 @@ const en = {
     },
   },
   contact: {
-    pageTitle: "Contact Me",
-    getInTouch: "Get in touch",
+    pageTitle: "Contact",
+    getInTouch: "Let's talk",
+    eyebrow: "Available for projects",
+    heroTitle: "Tell me what you want to build",
     email: "Email",
     phone: "Phone",
     description:
       "Have a project in mind? Drop me a message and let's talk about how I can help.",
     namePlaceholder: "Name",
     emailPlaceholder: "Email",
-    messagePlaceholder: "Message",
+    messagePlaceholder: "Tell me about the project, timeline, and rough budget",
     sending: "Sending...",
-    send: "Send",
+    send: "Send message",
     success: "Message sent! Thank you for reaching out.",
     error: "Failed to send. Please try again.",
+    response: "Usually reply within 24–48h",
   },
   lang: {
     es: "ES",

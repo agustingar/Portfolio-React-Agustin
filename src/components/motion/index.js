@@ -4,3 +4,6 @@ export { CountUp } from "./CountUp";
 export { Magnetic } from "./Magnetic";
 export { TextReveal } from "./TextReveal";
 export { FloatingCta } from "./FloatingCta";
+export { SoftCursor } from "./SoftCursor";
+export { ScrollStory } from "./ScrollStory";
+export { HorizontalCases } from "./HorizontalCases";

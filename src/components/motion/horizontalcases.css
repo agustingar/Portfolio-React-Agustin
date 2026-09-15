@@ -1,0 +1,174 @@
+.hz_cases {
+  position: relative;
+  height: 260vh;
+  border-top: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+}
+
+.hz_cases_sticky {
+  position: sticky;
+  top: 60px;
+  height: calc(100dvh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: clip;
+  padding: 1.25rem 0;
+}
+
+.hz_cases_head {
+  width: min(1180px, calc(100% - 3rem));
+  margin: 0 auto 1.25rem;
+}
+
+.hz_cases_eyebrow {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-color-4);
+}
+
+.hz_cases_title {
+  margin: 0;
+  font-family: Marcellus, serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.1;
+}
+
+.hz_cases_hint {
+  margin: 0.55rem 0 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text-color) 45%, transparent);
+}
+
+.hz_cases_track {
+  display: flex;
+  gap: 1.35rem;
+  width: max-content;
+  padding-left: max(1.5rem, calc((100vw - 1180px) / 2));
+  padding-right: 1.5rem;
+  will-change: transform;
+}
+
+.hz_card {
+  position: relative;
+  flex: 0 0 min(70vw, 460px);
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.hz_card_num {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 3;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hz_card_media_wrap {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      70% 60% at 50% 40%,
+      color-mix(in srgb, var(--text-color-4) 10%, transparent),
+      transparent 70%
+    ),
+    #0e0e0e;
+  box-shadow:
+    0 24px 50px rgba(0, 0, 0, 0.32),
+    0 0 0 1px color-mix(in srgb, var(--text-color) 10%, transparent);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease;
+}
+
+.hz_card:hover .hz_card_media_wrap {
+  transform: translateY(-8px) scale(1.015);
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.42);
+}
+
+.hz_card_media {
+  position: absolute;
+  inset: 8%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  filter: saturate(1.06) contrast(1.03);
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), filter 0.35s ease;
+}
+
+.hz_card:hover .hz_card_media {
+  transform: scale(1.04);
+  filter: saturate(1.1) contrast(1.05) brightness(1.03);
+}
+
+.hz_card_media_shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    transparent 65%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+}
+
+.hz_card_body h3 {
+  margin: 0.2rem 0 0.45rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+  line-height: 1.2;
+}
+
+.hz_card_tags {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text-color) 55%, transparent);
+}
+
+.hz_card_body span {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-color-4);
+}
+
+.hz_cases--static {
+  height: auto;
+  padding: clamp(3.5rem, 8vw, 6rem) 0;
+}
+
+.hz_cases_track--swipe {
+  width: auto;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0 1.5rem 0.75rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hz_cases_track--swipe .hz_card {
+  flex-basis: min(82vw, 360px);
+  scroll-snap-align: start;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hz_card_media,
+  .hz_card_media_wrap {
+    transition: none !important;
+  }
+}

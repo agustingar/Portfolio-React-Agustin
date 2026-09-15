@@ -3,8 +3,9 @@ import * as emailjs from "emailjs-com";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Alert } from "react-bootstrap";
-import { contactConfig } from "../../content_option";
-import { Reveal } from "../../components/motion";
+import { contactConfig, socialprofils } from "../../content_option";
+import contactVisual from "../../assets/images/contact-ag.jpg";
+import { Magnetic, Reveal, TextReveal } from "../../components/motion";
 import { useTranslation } from "../../i18n/LanguageContext";
 
 export const ContactUs = () => {
@@ -38,8 +39,7 @@ export const ContactUs = () => {
         contactConfig.YOUR_USER_ID
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           setFormdata({
             email: "",
             name: "",
@@ -50,8 +50,7 @@ export const ContactUs = () => {
             show: true,
           });
         },
-        (error) => {
-          console.log(error.text);
+        () => {
           setFormdata({
             ...formData,
             loading: false,
@@ -59,7 +58,7 @@ export const ContactUs = () => {
             variant: "danger",
             show: true,
           });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
+          document.getElementsByClassName("co_alert")[0]?.scrollIntoView();
         }
       );
   };
@@ -73,7 +72,7 @@ export const ContactUs = () => {
 
   return (
     <HelmetProvider>
-      <Container>
+      <section className="contact_page">
         <Helmet>
           <meta charSet="utf-8" />
           <title>
@@ -81,102 +80,144 @@ export const ContactUs = () => {
           </title>
           <meta name="description" content={t("meta.description")} />
         </Helmet>
-        <Reveal>
-          <Row className="mb-5 mt-3 pt-md-3">
-            <Col lg="8">
-              <h1 className="display-4 mb-4 tit">{t("contact.pageTitle")}</h1>
-              <hr className="t_border my-4 ml-0 text-left" />
+
+        <Container>
+          <Reveal>
+            <div className="contact_hero">
+              <p className="contact_eyebrow">
+                <span className="contact_dot" aria-hidden="true" />
+                {t("contact.eyebrow")}
+              </p>
+              <h1 className="contact_title">
+                <TextReveal text={t("contact.heroTitle")} />
+              </h1>
+              <p className="contact_lead">{t("contact.description")}</p>
+            </div>
+          </Reveal>
+
+          <Alert
+            variant={formData.variant}
+            className={`rounded-0 co_alert ${
+              formData.show ? "d-block" : "d-none"
+            }`}
+            onClose={() => setFormdata({ ...formData, show: false })}
+            dismissible
+          >
+            <p className="my-0">{formData.alertmessage}</p>
+          </Alert>
+
+          <Row className="contact_layout g-4">
+            <Col lg="5" className="d-flex">
+              <Reveal delay={0.05} className="contact_side w-100">
+                <div className="contact_visual_wrap">
+                  <div
+                    className="contact_visual"
+                    style={{ backgroundImage: `url(${contactVisual})` }}
+                    role="img"
+                    aria-label="AG Marketing"
+                  />
+                  <div className="contact_visual_shade" aria-hidden="true" />
+                </div>
+                <div className="contact_info_panel">
+                  <h2 className="contact_info_title">{t("contact.getInTouch")}</h2>
+                  <p className="contact_response">{t("contact.response")}</p>
+
+                  <a
+                    className="contact_info_card"
+                    href={`mailto:${contactConfig.YOUR_EMAIL}`}
+                  >
+                    <span>{t("contact.email")}</span>
+                    <strong>{contactConfig.YOUR_EMAIL}</strong>
+                  </a>
+
+                  {contactConfig.YOUR_FONE ? (
+                    <a
+                      className="contact_info_card"
+                      href={`tel:${contactConfig.YOUR_FONE.replace(/\s/g, "")}`}
+                    >
+                      <span>{t("contact.phone")}</span>
+                      <strong>{contactConfig.YOUR_FONE}</strong>
+                    </a>
+                  ) : null}
+
+                  <div className="contact_socials">
+                    <a
+                      href={socialprofils.linkedin}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      LinkedIn
+                    </a>
+                    <a
+                      href={socialprofils.github}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Github
+                    </a>
+                  </div>
+                </div>
+              </Reveal>
+            </Col>
+
+            <Col lg="7" className="d-flex">
+              <Reveal delay={0.1} className="contact_form_wrap w-100">
+                <form onSubmit={handleSubmit} className="contact__form">
+                  <div className="contact_form_grid">
+                    <label className="contact_field">
+                      <span>{t("contact.namePlaceholder")}</span>
+                      <input
+                        className="form-control"
+                        id="name"
+                        name="name"
+                        placeholder={t("contact.namePlaceholder")}
+                        value={formData.name || ""}
+                        type="text"
+                        required
+                        onChange={handleChange}
+                      />
+                    </label>
+                    <label className="contact_field">
+                      <span>{t("contact.emailPlaceholder")}</span>
+                      <input
+                        className="form-control"
+                        id="email"
+                        name="email"
+                        placeholder={t("contact.emailPlaceholder")}
+                        type="email"
+                        value={formData.email || ""}
+                        required
+                        onChange={handleChange}
+                      />
+                    </label>
+                    <label className="contact_field contact_field--full contact_field--message">
+                      <span>{t("contact.messagePlaceholder")}</span>
+                      <textarea
+                        className="form-control"
+                        id="message"
+                        name="message"
+                        placeholder={t("contact.messagePlaceholder")}
+                        rows="4"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                      />
+                    </label>
+                  </div>
+                  <Magnetic className="contact_submit_wrap">
+                    <button className="btn ac_btn contact_submit" type="submit">
+                      {formData.loading
+                        ? t("contact.sending")
+                        : t("contact.send")}
+                    </button>
+                  </Magnetic>
+                </form>
+              </Reveal>
             </Col>
           </Row>
-        </Reveal>
-        <Row className="sec_sp">
-          <Col lg="12">
-            <Alert
-              variant={formData.variant}
-              className={`rounded-0 co_alert ${
-                formData.show ? "d-block" : "d-none"
-              }`}
-              onClose={() => setFormdata({ ...formData, show: false })}
-              dismissible
-            >
-              <p className="my-0">{formData.alertmessage}</p>
-            </Alert>
-          </Col>
-          <Col lg="5" className="mb-5">
-            <Reveal delay={0.05}>
-              <h3 className=" py-4 tit ">{t("contact.getInTouch")}</h3>
-              <address>
-                <strong>{t("contact.email")}:</strong>{" "}
-                <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
-                  {contactConfig.YOUR_EMAIL}
-                </a>
-                <br />
-                <br />
-                {contactConfig.hasOwnProperty("YOUR_FONE") ? (
-                  <p>
-                    <strong>{t("contact.phone")}:</strong>{" "}
-                    {contactConfig.YOUR_FONE}
-                  </p>
-                ) : (
-                  ""
-                )}
-              </address>
-              <p>{t("contact.description")}</p>
-            </Reveal>
-          </Col>
-          <Col lg="7" className="d-flex align-items-center">
-            <Reveal delay={0.1} className="w-100">
-              <form onSubmit={handleSubmit} className="contact__form w-100">
-                <Row>
-                  <Col lg="6" className="form-group">
-                    <input
-                      className="form-control"
-                      id="name"
-                      name="name"
-                      placeholder={t("contact.namePlaceholder")}
-                      value={formData.name || ""}
-                      type="text"
-                      required
-                      onChange={handleChange}
-                    />
-                  </Col>
-                  <Col lg="6" className="form-group">
-                    <input
-                      className="form-control rounded-0"
-                      id="email"
-                      name="email"
-                      placeholder={t("contact.emailPlaceholder")}
-                      type="email"
-                      value={formData.email || ""}
-                      required
-                      onChange={handleChange}
-                    />
-                  </Col>
-                </Row>
-                <textarea
-                  className="form-control rounded-0"
-                  id="message"
-                  name="message"
-                  placeholder={t("contact.messagePlaceholder")}
-                  rows="5"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                ></textarea>
-                <br />
-                <Row>
-                  <Col lg="12" className="form-group">
-                    <button className="btn ac_btn" type="submit">
-                      {formData.loading ? t("contact.sending") : t("contact.send")}
-                    </button>
-                  </Col>
-                </Row>
-              </form>
-            </Reveal>
-          </Col>
-        </Row>
-      </Container>
-      <div className={formData.loading ? "loading-bar" : "d-none"}></div>
+        </Container>
+        <div className={formData.loading ? "loading-bar" : "d-none"} />
+      </section>
     </HelmetProvider>
   );
 };

@@ -416,7 +416,68 @@ section {
     text-transform: uppercase;
     font-weight: 700;
     color: var(--text-color-4);
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+.home_hero_meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1.25rem;
+    margin-bottom: 1.1rem;
+}
+
+.home_folio {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--text-color) 55%, transparent);
+    font-weight: 600;
+}
+
+.home_giant {
+    margin: 0 0 1.25rem;
+}
+
+.home_giant_line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 0.65rem;
+    margin: 0;
+    font-family: Marcellus, serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    letter-spacing: 0.08em;
+    line-height: 1;
+    color: var(--text-color);
+}
+
+.home_giant_dash {
+    color: var(--text-color-4);
+    letter-spacing: -0.08em;
+}
+
+.home_giant_accent {
+    color: var(--text-color-4);
+}
+
+.home_giant_main {
+    margin: 0.35rem 0 0;
+    font-family: Marcellus, serif;
+    font-size: clamp(2.4rem, 7vw, 4.8rem);
+    line-height: 0.92;
+    letter-spacing: 0.04em;
+    color: var(--text-color);
+}
+
+.home_hero_name {
+    font-size: 1.15rem !important;
+    opacity: 0.85;
+}
+
+.home_typewriter {
+    font-size: clamp(1.15rem, 2.4vw, 1.55rem) !important;
+    margin-bottom: 1.25rem !important;
 }
 
 .home_available_dot {
@@ -545,17 +606,226 @@ section {
     color: color-mix(in srgb, var(--text-color) 65%, transparent);
 }
 
-.home_featured,
+.home_featured--cta {
+    padding: 1.5rem 1.5rem 2.5rem;
+    border-top: none;
+}
+
 .home_process {
     padding: clamp(3.5rem, 8vw, 6rem) 1.5rem;
     border-top: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
 }
 
-.home_featured_grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.25rem;
+
+.home_feat_list {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 2rem;
+}
+
+.home_feat_row {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem 1.25rem;
+    padding: 1.35rem 0.25rem;
+    border-top: 1px solid color-mix(in srgb, var(--text-color) 14%, transparent);
+    text-decoration: none;
+    color: var(--text-color);
+    overflow: hidden;
+    transition: color 0.3s ease, padding 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home_feat_row:last-child {
+    border-bottom: 1px solid color-mix(in srgb, var(--text-color) 14%, transparent);
+}
+
+.home_feat_row:hover {
+    color: var(--text-color-4);
+    padding-left: 0.55rem;
+}
+
+.home_feat_index {
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+    color: var(--text-color-4);
+}
+
+.home_feat_tags {
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--text-color) 55%, transparent);
+}
+
+.home_feat_copy h3 {
+    margin: 0;
+    font-size: clamp(1.15rem, 2.5vw, 1.75rem);
+    line-height: 1.2;
+}
+
+.home_feat_preview {
+    position: absolute;
+    right: 18%;
+    top: 50%;
+    width: 180px;
+    height: 120px;
+    border-radius: 0.75rem;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: translateY(-40%) rotate(-4deg) scale(0.92);
+    pointer-events: none;
+    transition: opacity 0.35s ease, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+
+.home_feat_row:hover .home_feat_preview {
+    opacity: 1;
+    transform: translateY(-50%) rotate(-2deg) scale(1);
+}
+
+.home_feat_visit {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    opacity: 0.65;
+    transition: opacity 0.25s ease, transform 0.3s ease;
+}
+
+.home_feat_row:hover .home_feat_visit {
+    opacity: 1;
+    transform: translateX(4px);
+    color: var(--text-color-4);
+}
+
+.home_talk_marquee {
+    overflow: hidden;
+    border-top: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+    padding: 1.1rem 0;
+    margin-bottom: 0;
+}
+
+.home_talk_track {
+    display: inline-block;
+    white-space: nowrap;
+    font-family: Marcellus, serif;
+    font-size: clamp(1.4rem, 4vw, 2.4rem);
+    letter-spacing: 0.08em;
+    color: var(--text-color-4);
+    animation: talkMarquee 28s linear infinite;
+}
+
+@keyframes talkMarquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.home_split {
+    padding: clamp(3.5rem, 9vw, 7rem) 1.5rem;
+    text-align: center;
+    overflow: hidden;
+    border-top: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+    background:
+        radial-gradient(
+            70% 80% at 50% 0%,
+            color-mix(in srgb, var(--text-color-4) 12%, transparent),
+            transparent 70%
+        ),
+        var(--bg-color);
+}
+
+.home_split_eyebrow {
+    margin: 0 0 0.75rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-color-4);
+}
+
+.home_split_left,
+.home_split_right {
+    margin: 0;
+    font-family: Marcellus, serif;
+    font-size: clamp(3rem, 12vw, 8rem);
+    line-height: 0.88;
+    letter-spacing: -0.02em;
+}
+
+.home_split_right {
+    color: var(--text-color-4);
+    margin-bottom: 1.25rem;
+}
+
+.home_split_text {
+    margin: 0 auto;
+    max-width: 38rem;
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    line-height: 1.6;
+    color: color-mix(in srgb, var(--text-color) 78%, transparent);
+}
+
+.home_interests {
+    padding: clamp(3rem, 7vw, 5rem) 1.5rem;
+    border-top: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+    text-align: center;
+}
+
+.home_interests .home_highlights_title {
+    max-width: 28ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home_focus_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.65rem;
+    max-width: 720px;
+    margin: 1.75rem auto 0;
+}
+
+.home_focus_chip {
+    display: inline-flex;
+}
+
+.home_focus_chip span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.65rem 1rem;
+    border: 1px solid color-mix(in srgb, var(--text-color) 16%, transparent);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: color-mix(in srgb, var(--text-color) 82%, transparent);
+    background: color-mix(in srgb, var(--text-color) 4%, transparent);
+    transition: border-color 0.25s ease, color 0.25s ease, transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.home_focus_chip:hover span {
+    border-color: var(--text-color-4);
+    color: var(--text-color-4);
+    background: color-mix(in srgb, var(--text-color-4) 10%, transparent);
+    transform: translateY(-2px);
+}
+
+.home_featured_grid {
+    display: none;
 }
 
 .home_featured_wrap {
@@ -636,7 +906,7 @@ section {
 }
 
 .home_testimonials_grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .home_value_card,
@@ -768,18 +1038,28 @@ section {
     }
 
     .home_highlights_grid,
-    .home_featured_grid,
     .home_process_grid,
     .home_stats,
     .home_values_grid,
     .home_testimonials_grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .home_feat_preview {
+        display: none;
+    }
+
+    .home_feat_row {
+        grid-template-columns: auto 1fr;
+    }
+
+    .home_feat_visit {
+        grid-column: 2;
+    }
 }
 
 @media (max-width: 575.98px) {
     .home_highlights_grid,
-    .home_featured_grid,
     .home_process_grid,
     .home_stats,
     .home_values_grid,
@@ -793,8 +1073,9 @@ section {
     .ac_btn,
     .home_card,
     .home_cta_link,
-    .home_featured_card,
-    .home_featured_media,
+    .home_feat_row,
+    .home_feat_preview,
+    .home_feat_visit,
     .home_value_card,
     .home_quote {
         transition: none !important;
@@ -803,12 +1084,13 @@ section {
     .scroll_hint_line,
     .home_available_dot,
     .home_marquee_track,
+    .home_talk_track,
     .h_bg_glow {
         animation: none;
     }
 
     .home_card:hover,
-    .home_featured_card:hover,
+    .home_feat_row:hover,
     .home_value_card:hover,
     .home_quote:hover,
     .ac_btn:hover {

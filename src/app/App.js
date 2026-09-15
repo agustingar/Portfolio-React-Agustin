@@ -7,6 +7,7 @@ import {
 import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
+import { SoftCursor } from "../components/motion";
 import "./App.css";
 
 function _ScrollToTop(props) {
@@ -22,6 +23,7 @@ export default function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <ScrollToTop>
+        <SoftCursor />
         <Headermain />
         <AppRoutes />
       </ScrollToTop>

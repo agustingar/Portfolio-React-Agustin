@@ -75,6 +75,45 @@ const es = {
     aboutCta: "Conóceme",
     ctaBandTitle: "¿Listo para construir algo memorable?",
     ctaBandText: "Cuéntame tu idea y la convertimos en producto digital.",
+    folioLabel: "Folio / 2020 — Actualidad",
+    heroLine1: "FULL",
+    heroLine2: "STACK",
+    heroLine3: "DEVELOPER",
+    featuredCount: "Proyectos destacados ({{count}})",
+    visitSite: "Visitar sitio",
+    talkMarquee:
+      "HABLEMOS — COLABOREMOS — DI HOLA — ¿EMPEZAMOS ALGO? — ",
+    splitEyebrow: "desde 2020",
+    splitLeft: "FullStack",
+    splitRight: "Developer",
+    splitText:
+      "Construyo webs, ecommerce y apps: Wordpress, Shopify, PrestaShop y React Native. Código limpio, UX clara y productos que funcionan en el día a día.",
+    storyEyebrow: "Cómo trabajo",
+    storyTitle: "Web, ecommerce y apps en producción",
+    story: {
+      craft: {
+        tag: "Web / Wordpress",
+        heading: "Sitios a medida que cargan y convierten",
+        text: "Landing, corporativas y plugins para AG Marketing: Elementor, SEO, reservas y código limpio listo para cliente real.",
+      },
+      product: {
+        tag: "Ecommerce",
+        heading: "Tiendas que venden sin fricción",
+        text: "Shopify, PrestaShop y Wordpress Woo: catálogo, checkout y rendimiento pensados para leads y ventas.",
+      },
+      apps: {
+        tag: "Apps móviles",
+        heading: "React Native en el día a día",
+        text: "PartFri y Guardify: flujos reales, APIs, Firebase, Laravel y capas de IA ya en producción.",
+      },
+    },
+    casesEyebrow: "Casos seleccionados",
+    casesTitle: "Proyectos con impacto",
+    seeCase: "Ver caso",
+    scrollHint: "Scroll para explorar",
+    dragHint: "Scroll para mover lateral",
+    interestsTitle: "Stack & herramientas",
+    interestsSubtitle: "Con lo que construyo productos cada semana.",
     valuesTitle: "Qué me diferencia",
     valuesSubtitle: "Detalle, velocidad y colaboración real con el cliente.",
     values: {
@@ -83,16 +122,16 @@ const es = {
         text: "Entrego rápido sin sacrificar calidad ni accesibilidad.",
       },
       craft: {
-        title: "Craft visual",
-        text: "Microinteracciones, tipografía y composición cuidadas.",
+        title: "Producto usable",
+        text: "Flujos claros, rendimiento y detalle en cada entrega.",
       },
       collab: {
         title: "Colaboración clara",
         text: "Comunicación directa, demos frecuentes y feedback útil.",
       },
     },
-    testimonialsTitle: "Feedback",
-    testimonialsSubtitle: "Lo que valoran de trabajar conmigo.",
+    testimonialsTitle: "Reseñas",
+    testimonialsSubtitle: "Lo que dicen clientes y equipos con los que trabajo.",
     testimonials: {
       one: {
         quote:
@@ -106,11 +145,31 @@ const es = {
         author: "Equipo marketing",
         role: "Project Lead",
       },
+      three: {
+        quote:
+          "Montó la web y el plugin de reservas sin fricción. Cliente contento y plazos cumplidos.",
+        author: "Lechuzas Properties",
+        role: "Cliente inmobiliario",
+      },
+      four: {
+        quote:
+          "En PartFri y Guardify resolvió flujos complejos con APIs y React Native de forma sólida.",
+        author: "AG Marketing",
+        role: "Producto / Apps",
+      },
+      five: {
+        quote:
+          "Shopify y Wordpress a medida, comunicación directa y resultados medibles en ventas.",
+        author: "Ecommerce retail",
+        role: "Founder",
+      },
     },
   },
   about: {
     pageTitle: "Sobre mí",
-    aboutTitle: "Sobre mí",
+    aboutTitle: "Quién soy",
+    heroEyebrow: "FullStack · Freelance · 2020+",
+    heroTitle: "Código, producto y clientes reales",
     aboutme:
       "Frontend Developer apasionado por aprender, afrontar retos y crear productos que mejoren la vida de las personas. Trabajo entre webs Wordpress a medida, ecommerce y apps React Native (AG Marketing), con foco en rendimiento, UX y detalle visual. Me gusta estar al día con nuevas tecnologías. Fun fact: me encanta tocar la guitarra y jugar al fútbol.",
     timeline: "Experiencia laboral",
@@ -122,6 +181,10 @@ const es = {
     nowTitle: "Ahora mismo",
     nowText:
       "FullStack Developer freelance desde 2020 (Wordpress, PrestaShop, Shopify y apps). Proyectos también con AG Marketing (Guardify / PartFri).",
+    focusLabel: "Foco",
+    focusWeb: "Web & plugins",
+    focusShop: "Ecommerce",
+    focusApps: "Apps React Native",
     work: {
       freelance: {
         company: "Freelance",
@@ -254,18 +317,21 @@ const es = {
   },
   contact: {
     pageTitle: "Contacto",
-    getInTouch: "Ponte en contacto",
+    getInTouch: "Hablemos",
+    eyebrow: "Disponible para proyectos",
+    heroTitle: "Cuéntame qué quieres construir",
     email: "Email",
     phone: "Teléfono",
     description:
       "¿Tienes un proyecto en mente? Escríbeme y hablamos sobre cómo puedo ayudarte.",
     namePlaceholder: "Nombre",
     emailPlaceholder: "Email",
-    messagePlaceholder: "Mensaje",
+    messagePlaceholder: "Cuéntame el proyecto, plazos y presupuesto aproximado",
     sending: "Enviando...",
-    send: "Enviar",
+    send: "Enviar mensaje",
     success: "¡Mensaje enviado! Gracias por contactarme.",
     error: "Error al enviar. Inténtalo de nuevo.",
+    response: "Respuesta habitual en 24–48h",
   },
   lang: {
     es: "ES",

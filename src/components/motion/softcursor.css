@@ -1,0 +1,43 @@
+.soft_cursor_dot,
+.soft_cursor_ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+.soft_cursor_dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.soft_cursor_ring {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    transition: width 0.25s ease, height 0.25s ease, margin 0.25s ease;
+}
+
+.soft_cursor_ring.is-hover {
+    width: 58px;
+    height: 58px;
+    margin: -11px 0 0 -11px;
+    border-color: var(--text-color-4);
+}
+
+.soft_cursor_dot.is-hover {
+    background: var(--text-color-4);
+    mix-blend-mode: normal;
+}
+
+@media (pointer: coarse) {
+    .soft_cursor_dot,
+    .soft_cursor_ring {
+        display: none;
+    }
+}

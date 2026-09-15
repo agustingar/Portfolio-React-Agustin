@@ -1,7 +1,26 @@
 import img from "../src/assets/images/AG.PNG";
-import dermobalImg from "../src/assets/images/dermobal.png";
-import waquaImg from "../src/assets/images/waqua.jpg";
-import radooImg from "../src/assets/images/radoo.jpg";
+import partfriImg from "../src/assets/images/portfolio/partfri.jpg";
+import guardifyImg from "../src/assets/images/portfolio/guardify.jpg";
+import lechuzasImg from "../src/assets/images/portfolio/lechuzas.jpg";
+import selectyourvetImg from "../src/assets/images/portfolio/selectyourvet.jpg";
+import agmarketingImg from "../src/assets/images/portfolio/agmarketing.jpg";
+import dentalcorbellaImg from "../src/assets/images/portfolio/dentalcorbella.jpg";
+import v3ntureImg from "../src/assets/images/portfolio/v3nture.jpg";
+import boconniImg from "../src/assets/images/portfolio/boconni.jpg";
+import waquaImg from "../src/assets/images/portfolio/waqua.jpg";
+import anartxyImg from "../src/assets/images/portfolio/anartxy.jpg";
+import dermobalImg from "../src/assets/images/portfolio/dermobal.jpg";
+import pilatuImg from "../src/assets/images/portfolio/pilatu.jpg";
+import afterbiteImg from "../src/assets/images/portfolio/afterbite.jpg";
+import prolinkImg from "../src/assets/images/portfolio/prolink.jpg";
+import fenixImg from "../src/assets/images/portfolio/fenix.jpg";
+import radooImg from "../src/assets/images/portfolio/radoo.jpg";
+import valyImg from "../src/assets/images/portfolio/valy.jpg";
+import triptomaxImg from "../src/assets/images/portfolio/triptomax.jpg";
+import melodyImg from "../src/assets/images/portfolio/melody.jpg";
+import gif4uImg from "../src/assets/images/portfolio/gif4u.jpg";
+import spotifyImg from "../src/assets/images/portfolio/spotify.jpg";
+import calculatorImg from "../src/assets/images/portfolio/calculator.jpg";
 
 const logotext = "AGUSTÍN GARCÍA";
 
@@ -92,7 +111,7 @@ const highlightKeys = ["wordpress", "react", "apps"];
 const processKeys = ["discover", "design", "build", "launch"];
 const featuredKeys = ["partfri", "guardify", "selectyourvet", "lechuzas"];
 const valueKeys = ["speed", "craft", "collab"];
-const testimonialKeys = ["one", "two"];
+const testimonialKeys = ["one", "two", "three", "four", "five"];
 
 const stats = [
   { key: "projects", value: 35, suffix: "+" },
@@ -104,56 +123,56 @@ const stats = [
 const dataportfolio = [
   {
     key: "partfri",
-    img: "https://ag-marketing.es/wp-content/uploads/2026/05/Partfri-4.png",
+    img: partfriImg,
     link: "https://partfri.ag-marketing.es/",
     tags: ["React Native", "iOS", "Android", "Spotify API"],
     category: "app",
   },
   {
     key: "guardify",
-    img: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/96/a3/71/96a37172-f75e-4ef3-66a0-6e7ce27ec57d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1200x630wa.png",
+    img: guardifyImg,
     link: "https://ag-marketing.es/portfolio-item/guardify/",
     tags: ["React Native", "Expo", "Laravel", "IA"],
     category: "app",
   },
   {
     key: "lechuzas",
-    img: "https://lechuzas-properties.com/wp-content/uploads/2025/06/12-1024x683.jpeg",
+    img: lechuzasImg,
     link: "https://lechuzas-properties.com",
     tags: ["Wordpress", "Elementor", "Plugin", "Bookings"],
     category: "web",
   },
   {
     key: "selectyourvet",
-    img: "https://selectyourvet.com/wp-content/uploads/2024/06/logo-letras-verdes-scaled.png",
+    img: selectyourvetImg,
     link: "https://selectyourvet.com/",
     tags: ["Wordpress", "Plugin", "IA"],
     category: "web",
   },
   {
     key: "agmarketing",
-    img: "https://ag-marketing.es/wp-content/uploads/2024/03/Black-White-Minimalist-Aesthetic-Initials-Font-Logo.png",
+    img: agmarketingImg,
     link: "https://ag-marketing.es",
     tags: ["Wordpress", "SEO", "Branding"],
     category: "web",
   },
   {
     key: "dentalcorbella",
-    img: "https://ag-marketing.es/wp-content/uploads/2025/02/1.png",
+    img: dentalcorbellaImg,
     link: "https://dentalcorbella.com",
     tags: ["Wordpress", "Marketing", "Animación"],
     category: "web",
   },
   {
     key: "v3nture",
-    img: "https://ag-marketing.es/wp-content/uploads/2025/02/R-1080-x-1080-px-1.png",
+    img: v3ntureImg,
     link: "https://v3nturebuilders.com/",
     tags: ["Wordpress", "Plugin", "Web3"],
     category: "web",
   },
   {
     key: "boconni",
-    img: "https://boconni.com/wp-content/uploads/2024/07/VILLA-PIRINEOS-FISCAL-scaled-1170x653.jpg",
+    img: boconniImg,
     link: "https://boconni.com/",
     tags: ["Wordpress", "Real Estate"],
     category: "web",
@@ -167,7 +186,7 @@ const dataportfolio = [
   },
   {
     key: "anartxy",
-    img: "https://www.anartxy.com/cdn/shop/files/34A1835_dbf69b63-8cc9-495b-affe-60dc052560e4.jpg?v=1704197456&width=1200&height=600",
+    img: anartxyImg,
     link: "https://anartxy.es",
     tags: ["PrestaShop", "Ecommerce", "PHP"],
     category: "shop",
@@ -181,28 +200,28 @@ const dataportfolio = [
   },
   {
     key: "pilatu",
-    img: "https://pilatufitness.com/wp-content/uploads/2021/08/Pilatu_Cadillac_Reformer_01-2-1097x1536.jpg",
+    img: pilatuImg,
     link: "https://pilatufitness.com",
     tags: ["Wordpress", "Web"],
     category: "web",
   },
   {
     key: "afterbite",
-    img: "https://www.farmaciasoler.com/img/uploads/after-bite-gel-xtreme-20g--2.jpg",
+    img: afterbiteImg,
     link: "https://afterbite.es",
     tags: ["Wordpress", "Web"],
     category: "web",
   },
   {
     key: "prolink",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGq1R6LRnfeKvELP89EifAftFfhsP9XWnCUQ&s",
+    img: prolinkImg,
     link: "https://prolink.es",
     tags: ["Wordpress", "Web"],
     category: "web",
   },
   {
     key: "fenix",
-    img: "https://media.licdn.com/dms/image/v2/C4D0BAQGcUISF1fUFAw/company-logo_200_200/company-logo_200_200/0/1631353681286?e=2147483647&v=beta&t=17hvckgk6jv01q41QvbBSUMbWgBOjqADXmLzGLJJKZY",
+    img: fenixImg,
     link: "https://fenixstage.com",
     tags: ["Wordpress", "Web"],
     category: "web",
@@ -216,42 +235,42 @@ const dataportfolio = [
   },
   {
     key: "valy",
-    img: "https://s3-eu-west-1.amazonaws.com/tpd/logos/60bf9915fde226000166a596/0x0.png",
+    img: valyImg,
     link: "https://valycosmetics.com/",
     tags: ["Wordpress", "Ecommerce"],
     category: "shop",
   },
   {
     key: "triptomax",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLWXlVV-kTzzU1_SHMscrnTFhQvlORTXzmn0_Bf_e4NQ&s",
+    img: triptomaxImg,
     link: "https://triptomax.com",
     tags: ["Wordpress", "Web"],
     category: "web",
   },
   {
     key: "melody",
-    img: "https://picsum.photos/id/532/400/700/",
+    img: melodyImg,
     link: "https://melody-music-stream-front.vercel.app",
     tags: ["React", "NodeJS", "MongoDB"],
     category: "code",
   },
   {
     key: "gif4u",
-    img: "https://picsum.photos/id/119/600/550",
+    img: gif4uImg,
     link: "https://challenge-agustin.vercel.app",
     tags: ["React", "Firebase"],
     category: "code",
   },
   {
     key: "spotify",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXQEY_iIUMy7Wn63UE53yByCCLArmXOsAUrg&s",
+    img: spotifyImg,
     link: "https://spoty-theta.vercel.app/",
     tags: ["React", "Frontend"],
     category: "code",
   },
   {
     key: "calculator",
-    img: "https://images.unsplash.com/photo-1625225233840-695456021cde?auto=format&fit=crop&q=80&w=1000",
+    img: calculatorImg,
     link: "https://agustingar.github.io/calculator/",
     tags: ["Javascript", "UI"],
     category: "code",
