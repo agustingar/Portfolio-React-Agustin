@@ -107,10 +107,6 @@ section {
     .intro_btn-action .ac_btn {
         margin-right: 0;
     }
-
-    .scroll_hint {
-        display: none;
-    }
 }
 
 .intro_sec .text,
@@ -265,7 +261,7 @@ section {
     bottom: 28px;
     transform: translateX(-50%);
     z-index: 5;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -276,6 +272,12 @@ section {
     padding: 0;
     opacity: 0.8;
     transition: opacity 0.3s ease;
+}
+
+@media (min-width: 992px) {
+    .scroll_hint {
+        display: flex;
+    }
 }
 
 .scroll_hint:hover {

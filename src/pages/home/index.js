@@ -237,7 +237,7 @@ export const Home = () => {
 
           <button
             type="button"
-            className="scroll_hint"
+            className="scroll_hint d-none d-lg-flex"
             onClick={scrollToHighlights}
             aria-label={t("home.scroll")}
           >
