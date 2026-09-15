@@ -57,14 +57,18 @@ export const About = () => {
             </Col>
             <Col lg="7">
               <div className="about_timeline">
-                {worktimeline.map((data, i) => (
-                  <article className="about_timeline_item" key={i}>
+                {worktimeline.map((data) => (
+                  <article className="about_timeline_item" key={data.key}>
                     <span className="about_timeline_dot" aria-hidden="true" />
                     <div className="about_timeline_meta">
-                      <span className="about_timeline_date">{data.date}</span>
-                      <span className="about_timeline_role">{data.role}</span>
+                      <span className="about_timeline_date">
+                        {t(`about.work.${data.key}.date`)}
+                      </span>
+                      <span className="about_timeline_role">
+                        {t(`about.work.${data.key}.role`)}
+                      </span>
                     </div>
-                    <h4>{data.jobtitle}</h4>
+                    <h4>{t(`about.work.${data.key}.company`)}</h4>
                     <p>{data.where}</p>
                   </article>
                 ))}

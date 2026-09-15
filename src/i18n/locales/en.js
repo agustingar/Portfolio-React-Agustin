@@ -21,7 +21,7 @@ const en = {
       third: "I develop React Native apps",
     },
     description:
-      "Freelance FullStack Developer and Frontend at AG Marketing. Wordpress, PrestaShop, Shopify, and iOS/Android apps.",
+      "Freelance FullStack Developer since 2020. Wordpress, PrestaShop, Shopify, and iOS/Android apps.",
     portfolioBtn: "My Portfolio",
     contactBtn: "Contact Me",
     scroll: "Scroll",
@@ -121,7 +121,34 @@ const en = {
     download: "CV",
     nowTitle: "Right now",
     nowText:
-      "Freelance FullStack: Wordpress, PrestaShop, Shopify, and apps. Also at AG Marketing building websites, plugins, and AI products (Guardify / PartFri).",
+      "FullStack Developer freelance since 2020 (Wordpress, PrestaShop, Shopify, and apps). Also shipping AG Marketing products (Guardify / PartFri).",
+    work: {
+      freelance: {
+        company: "Freelance",
+        role: "FullStack Developer",
+        date: "2020 — Present",
+      },
+      doowebs: {
+        company: "Doowebs",
+        role: "FullStack Developer",
+        date: "Sep 2024",
+      },
+      anartxy: {
+        company: "Anartxy",
+        role: "Software Developer",
+        date: "Jan 2023 — Aug 2023",
+      },
+      assembler: {
+        company: "Assembler Institute of Technology",
+        role: "Frontend Developer",
+        date: "Feb 2022 — Nov 2022",
+      },
+      radoo: {
+        company: "Radoo",
+        role: "Project & Marketing Manager",
+        date: "2020 — 2021",
+      },
+    },
     educationItems: {
       assembler: "Master in Software Development (1200h+, MERN & LAMP, Agile)",
       florida: "Leadership, Entrepreneurship and Innovation Degree",

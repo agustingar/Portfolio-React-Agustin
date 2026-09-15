@@ -220,6 +220,7 @@
 .about_timeline_meta {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 0.5rem 0.9rem;
     margin-bottom: 0.35rem;
 }
@@ -238,6 +239,12 @@
 
 .about_timeline_role {
     color: color-mix(in srgb, var(--text-color) 65%, transparent);
+}
+
+.about_timeline_role::before {
+    content: "·";
+    margin-right: 0.9rem;
+    opacity: 0.5;
 }
 
 .about_timeline_item h4 {

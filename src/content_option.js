@@ -11,34 +11,24 @@ const introdata = {
 
 const worktimeline = [
   {
-    jobtitle: "Freelance",
+    key: "freelance",
     where: "Remote / Valencia",
-    date: "2024 — Present",
-    role: "FullStack Developer",
   },
   {
-    jobtitle: "AG Marketing (AGMA)",
+    key: "doowebs",
     where: "Valencia",
-    date: "2020 — Present",
-    role: "Frontend Developer",
   },
   {
-    jobtitle: "Anartxy",
+    key: "anartxy",
     where: "Pobla de Vallbona (Valencia)",
-    date: "Jan 2023 — Aug 2023",
-    role: "Software Developer",
   },
   {
-    jobtitle: "Assembler Institute of Technology",
+    key: "assembler",
     where: "Remote / Barcelona",
-    date: "Feb 2022 — Nov 2022",
-    role: "Frontend Developer",
   },
   {
-    jobtitle: "Radoo",
+    key: "radoo",
     where: "Valencia",
-    date: "2020 — 2021",
-    role: "Project & Marketing Manager",
   },
 ];
 
