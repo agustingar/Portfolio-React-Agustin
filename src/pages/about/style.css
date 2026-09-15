@@ -194,11 +194,43 @@
 
 @media (max-width: 991.98px) {
   .about_portrait_wrap {
-    margin: 0 auto 2rem;
+    margin: 0 auto 2.5rem;
+    max-width: 360px;
   }
 
   .about_stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 2rem;
+  }
+
+  .about_now--float {
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: -1rem;
+  }
+
+  .about_hero_title {
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+  }
+
+  .about_hero {
+    padding-top: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about_stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .about_focus_row {
+    gap: 0.4rem;
+  }
+
+  .about_focus_chip {
+    font-size: 0.68rem;
+    padding: 0.4rem 0.65rem;
   }
 }
 .table td,

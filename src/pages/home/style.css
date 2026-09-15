@@ -46,6 +46,70 @@ section {
     .intro_sec {
         display: block;
         height: auto !important;
+        min-height: 0;
+        overflow: visible;
+        padding-bottom: 0.5rem;
+    }
+
+    .intro_sec .h_bg-image {
+        height: min(42vh, 320px);
+        min-height: 220px;
+        max-height: 340px;
+        margin-bottom: 1.25rem;
+        background-position: center 20%;
+    }
+
+    .intro_sec .h_bg-image .block {
+        display: none;
+    }
+
+    .intro_sec .intro {
+        max-width: 700px;
+        padding: 0 1.15rem 1.5rem;
+    }
+
+    .intro_sec .text h1 {
+        margin-bottom: 0.75rem;
+        font-size: clamp(1.35rem, 6vw, 1.75rem);
+    }
+
+    .home_giant {
+        margin-bottom: 0.85rem;
+    }
+
+    .home_giant_line {
+        font-size: clamp(1.2rem, 5.5vw, 1.7rem);
+    }
+
+    .home_giant_main {
+        font-size: clamp(2rem, 11vw, 3.2rem);
+    }
+
+    .home_hero_name {
+        display: none !important;
+    }
+
+    .home_typewriter {
+        font-size: 1.05rem !important;
+        min-height: 1.6em;
+        margin-bottom: 0.85rem !important;
+    }
+
+    .intro_btn-action {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        padding-bottom: 1.75rem !important;
+        position: relative;
+        z-index: 2;
+    }
+
+    .intro_btn-action .ac_btn {
+        margin-right: 0;
+    }
+
+    .scroll_hint {
+        display: none;
     }
 }
 
@@ -55,23 +119,9 @@ section {
 }
 
 @media (max-width:991.98px) {
-
     .intro_sec .text,
     .intro_sec .h_bg-image {
         width: 100%;
-    }
-}
-
-.intro_sec .intro {
-    max-width: 450px;
-    margin: 0 auto;
-}
-
-@media (max-width:991.98px) {
-    .intro_sec .intro {
-        max-width: 700px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 }
 
@@ -179,21 +229,9 @@ section {
     justify-content: center;
 }
 
-@media (max-width:991.98px) {
-    .intro_sec .h_bg-image {
-        height: 600px;
-        min-height: 75vh;
-        margin-bottom: 30px;
-    }
-
-    .intro_sec .h_bg-image .block {
-        top: unset;
-        bottom: 0;
-        width: 100%;
-        margin: 0;
-        left: 50%;
-        transform: translate(-50%, 50%);
-    }
+.intro_sec .intro {
+    max-width: 450px;
+    margin: 0 auto;
 }
 
 .intro_sec .h_bg-image .block .wrap-icon {
@@ -1033,10 +1071,6 @@ section {
 }
 
 @media (max-width: 991.98px) {
-    .scroll_hint {
-        bottom: 16px;
-    }
-
     .home_highlights_grid,
     .home_process_grid,
     .home_stats,
@@ -1056,6 +1090,21 @@ section {
     .home_feat_visit {
         grid-column: 2;
     }
+
+    .home_split_left,
+    .home_split_right {
+        font-size: clamp(2.2rem, 14vw, 4rem);
+    }
+
+    .home_highlights,
+    .home_values,
+    .home_process,
+    .home_testimonials,
+    .home_interests,
+    .home_cta_band {
+        padding-left: 1.15rem;
+        padding-right: 1.15rem;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -1065,6 +1114,21 @@ section {
     .home_values_grid,
     .home_testimonials_grid {
         grid-template-columns: 1fr;
+    }
+
+    .home_hero_meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.45rem;
+    }
+
+    .h_bg_frame {
+        inset: 12px;
+    }
+
+    .ac_btn {
+        padding: 0.65rem 1.1rem;
+        font-size: 0.9rem;
     }
 }
 

@@ -52,6 +52,14 @@ body {
     border-right: 10px solid var(--primary-color);
 }
 
+@media (max-width: 767.98px) {
+    body {
+        border-left-width: 4px;
+        border-right-width: 4px;
+        padding-top: 56px;
+    }
+}
+
 body.has_soft_cursor,
 body.has_soft_cursor *:not(input):not(textarea):not(select):not(option) {
     cursor: none !important;

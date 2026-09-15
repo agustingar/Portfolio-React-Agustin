@@ -68,18 +68,46 @@
     top: 0;
     height: 100%;
 }
-.lat{
- color: var(--text-color-4) !important;
-}
-.lat:hover{
-    color: var(--text-color-1) !important;
-    cursor: pointer;
-}
+
 .br-left {
     width: 10px;
     left: 0;
     top: 0;
     height: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .br-top,
+    .br-bottom {
+        height: 4px;
+    }
+
+    .br-right,
+    .br-left {
+        width: 4px;
+    }
+
+    .nav_ac {
+        font-size: 1rem;
+        padding: 5px 8px;
+        height: 44px;
+        line-height: 1.8;
+    }
+
+    .site__header {
+        top: 6px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+.lat {
+    color: var(--text-color-4) !important;
+}
+
+.lat:hover {
+    color: var(--text-color-1) !important;
+    cursor: pointer;
 }
 
 .cortina__wrapper-menu {

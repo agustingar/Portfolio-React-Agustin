@@ -49,6 +49,12 @@
     }
 }
 
+@media (max-width: 767.98px) {
+    .floating_cta {
+        display: none;
+    }
+}
+
 @media (max-width: 575.98px) {
     .floating_cta {
         right: 14px;

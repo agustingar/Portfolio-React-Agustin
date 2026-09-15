@@ -319,6 +319,41 @@
 @media (max-width: 767.98px) {
   .contact_form_grid {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .contact_field--message {
+    grid-row: auto;
+  }
+
+  .contact_field--message .form-control {
+    min-height: 140px;
+    height: auto;
+    resize: vertical;
+  }
+
+  .contact_side,
+  .contact_form_wrap,
+  .contact__form {
+    height: auto;
+    min-height: 0;
+  }
+
+  .contact_visual_wrap {
+    aspect-ratio: 16 / 11;
+  }
+
+  .contact_title {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+
+  .contact_hero {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact__form,
+  .contact_info_panel {
+    padding: 1.15rem;
   }
 }
 
