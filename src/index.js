@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from "react-dom/client";
-import App from './app/App';
-import './index.css';
+import App from "./app/App";
+import { LanguageProvider } from "./i18n/LanguageContext";
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  <LanguageProvider>
     <App />
+  </LanguageProvider>
 );

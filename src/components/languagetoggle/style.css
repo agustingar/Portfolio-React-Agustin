@@ -1,0 +1,32 @@
+.lang_toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 10px;
+    cursor: default;
+    user-select: none;
+}
+
+.lang_btn {
+    background: transparent;
+    border: none;
+    color: var(--text-color-2);
+    font-family: Raleway, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 2px 4px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    line-height: 1;
+}
+
+.lang_btn:hover,
+.lang_btn.active {
+    color: var(--text-color-4);
+}
+
+.lang_divider {
+    color: var(--text-color-2);
+    font-size: 0.75rem;
+    opacity: 0.5;
+}

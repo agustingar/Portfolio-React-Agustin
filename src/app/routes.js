@@ -1,24 +1,17 @@
 import React from "react";
-import { Route, Routes} from "react-router-dom";
-import withRouter from "../hooks/withRouter"
+import { Route, Routes } from "react-router-dom";
+import { AnimatePresence } from "motion/react";
+import withRouter from "../hooks/withRouter";
 import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { AnimatedPage, FloatingCta } from "../components/motion";
 
 const AnimatedRoutes = withRouter(({ location }) => (
-  <TransitionGroup>
-    <CSSTransition
-      key={location.key}
-      timeout={{
-        enter: 400,
-        exit: 400,
-      }}
-      classNames="page"
-      unmountOnExit
-    >
+  <AnimatePresence mode="wait">
+    <AnimatedPage key={location.pathname}>
       <Routes location={location}>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -26,8 +19,8 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<Home />} />
       </Routes>
-    </CSSTransition>
-  </TransitionGroup>
+    </AnimatedPage>
+  </AnimatePresence>
 ));
 
 function AppRoutes() {
@@ -35,6 +28,7 @@ function AppRoutes() {
     <div className="s_c">
       <AnimatedRoutes />
       <Socialicons />
+      <FloatingCta />
     </div>
   );
 }

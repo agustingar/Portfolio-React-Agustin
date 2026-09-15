@@ -20,9 +20,19 @@
     --overlay-color: rgb(255 255 255 / 70%);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     height: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
 
 body {
@@ -70,6 +80,20 @@ p {
 .text_2,
 .text_2:hover {
     color: var(--text-color-2);
+}
+
+.text_reveal {
+    display: inline;
+}
+
+.text_reveal_word {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.text_reveal_inner {
+    display: inline-block;
 }
 
 code {

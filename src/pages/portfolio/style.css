@@ -1,84 +1,228 @@
-.po_items_ho {
-    column-width: 15em;
-    -moz-column-width: 15em;
-    -webkit-column-width: 15em;
-    column-gap: 4rem;
-    -moz-column-gap: 4rem;
-    -webkit-column-gap: 4rem;
+.portfolio_page .portfolio_subtitle {
+    max-width: 42ch;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: color-mix(in srgb, var(--text-color) 72%, transparent);
+    margin: 0;
 }
 
-.po_item {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin: 0.5rem auto;
-    position: relative;
-    background: var(--secondary-color);
-    padding: 6px;
-    border: 1px solid var(--secondary-color);
-    transition: 0.3s ease;
-    font-size: 0;
-    min-height: 300px;
-}
-
-.po_item img {
-    max-width: 100%;
-    min-height: 300px;
-    object-fit: contain;
-}
-
-.po_item .content {
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--overlay-color);
-    z-index: 1;
+.po_toolbar {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.75rem;
+}
+
+.po_filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.po_filter {
+    border: 1px solid color-mix(in srgb, var(--text-color) 18%, transparent);
+    background: transparent;
+    color: var(--text-color);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.55rem 0.9rem;
+    cursor: pointer;
+    transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease;
+}
+
+.po_filter:hover,
+.po_filter.active {
+    border-color: var(--text-color-4);
+    color: var(--text-color-4);
+    background: color-mix(in srgb, var(--text-color-4) 10%, transparent);
+}
+
+.po_count {
+    margin: 0;
+    font-size: 0.85rem;
+    color: color-mix(in srgb, var(--text-color) 65%, transparent);
+}
+
+.po_grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    perspective: 1400px;
+}
+
+.po_card_wrap {
     height: 100%;
-    width: 100%;
-    transition: 0.3s ease-in-out;
-    opacity: 0;
-    border: 1px solid black;
+    min-height: 420px;
 }
 
-.po_item .content {
-    opacity: 0;
-    transition-delay: 1s;
-    transition: 0.3s ease;
-    font-size: 20px;
-}
-
-.po_item:hover {
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
-}
-
-.po_item:hover .content {
-    height: calc(100% - 30px);
-    width: calc(100% - 30px);
-    opacity: 1;
-}
-
-.po_item:hover .content {
-    opacity: 1;
-    color: var(--secondary-color);
-}
-
-.po_item .content a {
-    background: var(--bg-color);
-    border: solid 1px var(--text-color);
-    padding: 4px 8px;
-    text-align: center;
-    font-size: 1rem;
+.po_dest_card {
+    position: relative;
+    display: block;
+    height: 100%;
+    min-height: 420px;
+    border-radius: 1.5rem;
+    overflow: hidden;
     text-decoration: none;
+    color: #fff;
+    border: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+    transform-style: preserve-3d;
+    transition: box-shadow 0.35s ease, border-color 0.35s ease;
+    will-change: transform;
 }
 
-.po_item .content a:hover {
-    text-decoration: none;
-    background-color:  var(--text-color-4);
+.po_dest_card.is-active {
+    border-color: color-mix(in srgb, var(--text-color-4) 55%, transparent);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+}
+
+.po_dest_bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.05);
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.po_dest_card.is-active .po_dest_bg {
+    transform: scale(1.12);
+}
+
+.po_dest_overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.25) 35%, rgba(0, 0, 0, 0.88) 100%);
+    pointer-events: none;
+}
+
+.po_dest_spotlight {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    mix-blend-mode: screen;
+}
+
+.po_dest_top {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.po_dest_index,
+.po_dest_badge {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.po_dest_badge {
+    color: var(--text-color-4);
+    border-color: color-mix(in srgb, var(--text-color-4) 45%, transparent);
+}
+
+.po_dest_content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 1.4rem 1.3rem 1.5rem;
+    transform: translateZ(28px);
+}
+
+.po_dest_stats {
+    margin: 0 0 0.55rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.po_dest_title {
+    margin: 0 0 0.45rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.po_dest_blurb {
+    margin: 0 0 0.85rem;
+    font-size: 0.86rem;
+    line-height: 1.45;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.35s ease;
+}
+
+.po_dest_card.is-active .po_dest_blurb {
+    max-height: 5.5rem;
+    opacity: 0.9;
+}
+
+.po_dest_cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-color-4);
+}
+
+.po_dest_cta span {
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.po_dest_card.is-active .po_dest_cta span {
+    transform: translateX(5px);
+}
+
+@media (max-width: 1199.98px) {
+    .po_grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767.98px) {
+    .po_grid {
+        grid-template-columns: 1fr;
+        gap: 1.15rem;
+    }
+
+    .po_card_wrap,
+    .po_dest_card {
+        min-height: 380px;
+    }
+
+    .po_dest_blurb {
+        max-height: 5.5rem;
+        opacity: 0.9;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .po_dest_card,
+    .po_dest_bg,
+    .po_dest_cta span,
+    .po_filter {
+        transition: none;
+    }
 }

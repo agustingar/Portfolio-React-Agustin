@@ -160,3 +160,120 @@
         transform: translateZ(0);
     }
 }
+
+.about_now {
+    margin-top: 1.5rem;
+    padding: 1rem 1.1rem;
+    border-left: 3px solid var(--text-color-4);
+    background: color-mix(in srgb, var(--text-color-4) 8%, transparent);
+}
+
+.about_now_label {
+    margin: 0 0 0.35rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-color-4);
+}
+
+.about_now_text {
+    margin: 0;
+    line-height: 1.55;
+}
+
+.about_timeline {
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.about_timeline::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0.35rem;
+    bottom: 0.35rem;
+    width: 1px;
+    background: color-mix(in srgb, var(--text-color-4) 45%, transparent);
+}
+
+.about_timeline_item {
+    position: relative;
+    padding: 0 0 1.6rem 1rem;
+}
+
+.about_timeline_item:last-child {
+    padding-bottom: 0;
+}
+
+.about_timeline_dot {
+    position: absolute;
+    left: -1.25rem;
+    top: 0.35rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--text-color-4);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--text-color-4) 18%, transparent);
+}
+
+.about_timeline_meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.9rem;
+    margin-bottom: 0.35rem;
+}
+
+.about_timeline_date,
+.about_timeline_role {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.about_timeline_date {
+    color: var(--text-color-4);
+}
+
+.about_timeline_role {
+    color: color-mix(in srgb, var(--text-color) 65%, transparent);
+}
+
+.about_timeline_item h4 {
+    margin: 0 0 0.25rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.about_timeline_item p {
+    margin: 0;
+    color: color-mix(in srgb, var(--text-color) 70%, transparent);
+}
+
+.about_langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.about_lang_chip {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 120px;
+    padding: 0.85rem 1rem;
+    border: 1px solid color-mix(in srgb, var(--text-color) 14%, transparent);
+}
+
+.about_lang_chip strong {
+    font-size: 0.95rem;
+}
+
+.about_lang_chip span {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-color-4);
+    font-weight: 700;
+}

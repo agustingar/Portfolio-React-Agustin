@@ -11,12 +11,19 @@
     margin-bottom: 2em;
     height: calc(2.5em + .75rem + 2px);
 }
-button.btn.ac_btn{
+button.btn.ac_btn {
     border-color: var(--text-color-4);
+    border-radius: 999px;
+    padding: 0.7rem 1.35rem;
+    transition: color 0.3s ease, background-color 0.3s ease,
+        border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 button.btn.ac_btn:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     background-color: var(--text-color-4);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px color-mix(in srgb, var(--text-color-4) 28%, transparent);
 }
 .tit{
     color: var(--text-color-4);
