@@ -81,7 +81,10 @@ const Headermain = () => {
               </a>
             </div>
             <p className="copyright m-0">
-              {t("nav.copyright", { name: logotext })}
+              {t("nav.copyright", {
+                name: logotext,
+                year: new Date().getFullYear(),
+              })}
             </p>
           </div>
         </div>

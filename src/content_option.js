@@ -11,10 +11,10 @@ const introdata = {
 
 const worktimeline = [
   {
-    jobtitle: "Doowebs",
-    where: "Valencia",
+    jobtitle: "Freelance",
+    where: "Remote / Valencia",
     date: "2024 — Present",
-    role: "Fullstack Developer",
+    role: "FullStack Developer",
   },
   {
     jobtitle: "AG Marketing (AGMA)",

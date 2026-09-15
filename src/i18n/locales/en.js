@@ -10,7 +10,7 @@ const en = {
     contact: "Contact",
     linkedin: "LinkedIn",
     github: "Github",
-    copyright: "copyright __ {{name}}",
+    copyright: "© {{year}} {{name}}",
   },
   home: {
     title: "I'm Agustín García",
@@ -21,7 +21,7 @@ const en = {
       third: "I develop React Native apps",
     },
     description:
-      "Frontend Developer at AG Marketing & Doowebs. I build fast Wordpress sites, custom plugins, ecommerce, and iOS/Android apps.",
+      "Freelance FullStack Developer and Frontend at AG Marketing. Wordpress, PrestaShop, Shopify, and iOS/Android apps.",
     portfolioBtn: "My Portfolio",
     contactBtn: "Contact Me",
     scroll: "Scroll",
@@ -121,7 +121,7 @@ const en = {
     download: "CV",
     nowTitle: "Right now",
     nowText:
-      "At Doowebs and AG Marketing: websites, plugins, Gutenberg, iOS/Android apps, and AI-powered products (Guardify / PartFri).",
+      "Freelance FullStack: Wordpress, PrestaShop, Shopify, and apps. Also at AG Marketing building websites, plugins, and AI products (Guardify / PartFri).",
     educationItems: {
       assembler: "Master in Software Development (1200h+, MERN & LAMP, Agile)",
       florida: "Leadership, Entrepreneurship and Innovation Degree",
@@ -142,7 +142,7 @@ const en = {
   portfolio: {
     pageTitle: "Portfolio",
     subtitle:
-      "Real projects from AG Marketing, Doowebs, and personal products: websites, plugins, ecommerce, and apps.",
+      "Real projects from AG Marketing, freelance work, and personal products: websites, plugins, ecommerce, and apps.",
     viewProject: "View project",
     open: "Open",
     filterAll: "All",
@@ -222,7 +222,7 @@ const en = {
     programming: {
       title: "Full stack & ecommerce",
       description:
-        "1200h+ at Assembler (MERN/LAMP, Agile). Ecommerce with PrestaShop/Shopify and Doowebs sites with PHP, JS, Gutenberg, and custom themes/plugins.",
+        "1200h+ at Assembler (MERN/LAMP, Agile). Ecommerce with PrestaShop/Shopify and freelance projects with PHP, JS, Gutenberg, and custom themes/plugins.",
     },
   },
   contact: {

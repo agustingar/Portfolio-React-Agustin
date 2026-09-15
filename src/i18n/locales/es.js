@@ -10,7 +10,7 @@ const es = {
     contact: "Contacto",
     linkedin: "LinkedIn",
     github: "Github",
-    copyright: "copyright __ {{name}}",
+    copyright: "© {{year}} {{name}}",
   },
   home: {
     title: "Soy Agustín García",
@@ -21,7 +21,7 @@ const es = {
       third: "Desarrollo apps con React",
     },
     description:
-      "Frontend Developer en AG Marketing y Doowebs. Creo webs Wordpress, plugins a medida, ecommerce y apps iOS/Android.",
+      "FullStack Developer freelance y Frontend en AG Marketing. Wordpress, PrestaShop, Shopify y apps iOS/Android.",
     portfolioBtn: "Mi Portfolio",
     contactBtn: "Contáctame",
     scroll: "Scroll",
@@ -121,7 +121,7 @@ const es = {
     download: "CV",
     nowTitle: "Ahora mismo",
     nowText:
-      "En Doowebs y AG Marketing: webs, plugins, Gutenberg, apps iOS/Android y productos con IA (Guardify / PartFri).",
+      "Freelance FullStack: Wordpress, PrestaShop, Shopify y apps. También en AG Marketing con webs, plugins y productos con IA (Guardify / PartFri).",
     educationItems: {
       assembler: "Máster en Software Development (1200h+, MERN & LAMP, Agile)",
       florida: "Grado en Leadership, Entrepreneurship and Innovation",
@@ -142,7 +142,7 @@ const es = {
   portfolio: {
     pageTitle: "Portfolio",
     subtitle:
-      "Proyectos reales de AG Marketing, Doowebs y productos propios: webs, plugins, ecommerce y apps.",
+      "Proyectos reales de AG Marketing, freelance y productos propios: webs, plugins, ecommerce y apps.",
     viewProject: "Ver proyecto",
     open: "Abrir",
     filterAll: "Todos",
@@ -222,7 +222,7 @@ const es = {
     programming: {
       title: "Full stack & ecommerce",
       description:
-        "Más de 1200h en Assembler (MERN/LAMP, Agile). Ecommerce con PrestaShop/Shopify y webs Doowebs con PHP, JS, Gutenberg y temas/plugins propios.",
+        "Más de 1200h en Assembler (MERN/LAMP, Agile). Ecommerce con PrestaShop/Shopify y proyectos freelance con PHP, JS, Gutenberg y temas/plugins propios.",
     },
   },
   contact: {
