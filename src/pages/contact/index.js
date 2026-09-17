@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import * as emailjs from "emailjs-com";
+import React, { useState, useEffect } from "react";
+import { init, send } from "@emailjs/browser";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Alert } from "react-bootstrap";
@@ -31,13 +31,11 @@ export const ContactUs = () => {
       message: formData.message,
     };
 
-    emailjs
-      .send(
-        contactConfig.YOUR_SERVICE_ID,
-        contactConfig.YOUR_TEMPLATE_ID,
-        templateParams,
-        contactConfig.YOUR_USER_ID
-      )
+    send(
+      contactConfig.YOUR_SERVICE_ID,
+      contactConfig.YOUR_TEMPLATE_ID,
+      templateParams
+    )
       .then(
         () => {
           setFormdata({
@@ -49,19 +47,29 @@ export const ContactUs = () => {
             variant: "success",
             show: true,
           });
-        },
-        () => {
-          setFormdata({
-            ...formData,
-            loading: false,
-            alertmessage: t("contact.error"),
-            variant: "danger",
-            show: true,
-          });
-          document.getElementsByClassName("co_alert")[0]?.scrollIntoView();
         }
-      );
+      )
+      .catch((err) => {
+        console.error("EmailJS error:", err);
+        setFormdata({
+          ...formData,
+          loading: false,
+          alertmessage: t("contact.error"),
+          variant: "danger",
+          show: true,
+        });
+        document.getElementsByClassName("co_alert")[0]?.scrollIntoView();
+      });
   };
+
+  useEffect(() => {
+    // init EmailJS user id for @emailjs/browser
+    try {
+      if (contactConfig?.YOUR_USER_ID) init(contactConfig.YOUR_USER_ID);
+    } catch (e) {
+      console.warn("EmailJS init failed", e);
+    }
+  }, []);
 
   const handleChange = (e) => {
     setFormdata({
