@@ -280,7 +280,7 @@ const dataportfolio = [
 const contactConfig = {
   YOUR_EMAIL: "agustin.tavoite@gmail.com",
   YOUR_FONE: "+34 603 568 026",
-  YOUR_SERVICE_ID: "service_kqb0wpr",
+  YOUR_SERVICE_ID: "service_hnjmjyw",
   YOUR_TEMPLATE_ID: "template_15l0mhe",
   YOUR_USER_ID: "t4PpHmWZtYGQCL9LO",
 };
