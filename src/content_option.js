@@ -141,8 +141,8 @@ const dataportfolio = [
     key: "lowgas",
     img: lowgasImg,
     link: "https://lowcost.ag-marketing.es",
-    tags: ["Producto", "Maps", "Lenis", "AG Marketing"],
-    category: "code",
+    tags: ["React Native", "iOS", "Android", "Maps"],
+    category: "app",
   },
   {
     key: "tapiter",
@@ -204,7 +204,7 @@ const dataportfolio = [
     key: "anartxy",
     img: anartxyImg,
     link: "https://anartxy.es",
-    tags: ["PrestaShop", "Ecommerce", "PHP"],
+    tags: ["Shopify", "Ecommerce", "UX"],
     category: "shop",
   },
   {
@@ -246,8 +246,8 @@ const dataportfolio = [
     key: "radoo",
     img: radooImg,
     link: "https://radoo.app",
-    tags: ["App", "Hostelería", "Producto"],
-    category: "app",
+    tags: ["Wordpress", "Web", "Hostelería"],
+    category: "web",
   },
   {
     key: "valy",

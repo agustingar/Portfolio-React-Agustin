@@ -258,11 +258,11 @@ const en = {
       pilatu: "Fitness site focused on branding and lead capture.",
       dermobal: "Clean, professional dermatology digital presence.",
       prolink: "Services website with tailored Wordpress architecture.",
-      anartxy: "Ecommerce with PrestaShop, PHP, and modern web trends.",
+      anartxy: "Ecommerce with Shopify, catalog, and brand experience.",
       spotify: "Spotify front clone with modern responsive UI.",
       fenix: "Events/stage site with a strong visual identity.",
       radoo:
-        "Hospitality product (digital menus → delivery) built during COVID.",
+        "Hospitality website (digital menus → delivery) built during COVID.",
       waqua: "Wordpress + Elementor site with integrations and modern UX.",
       triptomax: "Travel landing/site with CTA and basic SEO.",
       dentalcorbella:
@@ -272,14 +272,14 @@ const en = {
         "V3B / V3nture Builders platform: custom plugin and web3 service search.",
       boconni: "Premium real estate with gallery and positioning.",
       lowgas:
-        "Cheap gas-station map and ranking: Ministry prices, Google Routes minutes, in-app navigation, and CarPlay (AG Marketing).",
+        "React Native app for cheap gas stations: Ministry prices, Google routes, navigation, and CarPlay (AG Marketing).",
       tapiter:
         "Vite corporate site for a textiles manufacturer (upholstery, contract, fashion): brand, UX, and modern frontend.",
     },
     items: {
       partfri: "PartFri (iOS/Android App · AG Marketing)",
       guardify: "Guardify (React Native · Laravel · AI)",
-      lowgas: "LowGas (Maps · Product · AG Marketing)",
+      lowgas: "LowGas (React Native · Maps · AG Marketing)",
       tapiter: "Tapiter (Vite · Frontend)",
       lechuzas: "Lechuzas Properties (Wordpress · Bookings)",
       selectyourvet: "Select Your Vet (Plugin + AI)",
@@ -291,10 +291,10 @@ const en = {
       pilatu: "PilatuFitness (Wordpress)",
       dermobal: "Dermobal (Wordpress)",
       prolink: "Prolink (Wordpress)",
-      anartxy: "Anartxy (PrestaShop)",
+      anartxy: "Anartxy (Shopify)",
       spotify: "Spotify Clone Front (React)",
       fenix: "Fenix (Wordpress)",
-      radoo: "Radoo (Hospitality product)",
+      radoo: "Radoo (Wordpress · Hospitality)",
       waqua: "Waqua (Wordpress)",
       triptomax: "Triptomax (Wordpress)",
       dentalcorbella: "Dental Corbella (Wordpress · AG Marketing)",
@@ -312,7 +312,7 @@ const en = {
     apps: {
       title: "iOS & Android apps",
       description:
-        "Mobile products with React Native + Expo: PartFri (Spotify/Mercadona APIs) and Guardify (healthcare shifts, Firebase, Laravel, and GuardifIA).",
+        "Mobile products with React Native + Expo: PartFri, Guardify, and LowGas (maps, routes, and CarPlay).",
     },
     programming: {
       title: "Full stack & ecommerce",
