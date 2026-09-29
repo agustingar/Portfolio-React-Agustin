@@ -21,6 +21,8 @@ import melodyImg from "../src/assets/images/portfolio/melody.jpg";
 import gif4uImg from "../src/assets/images/portfolio/gif4u.jpg";
 import spotifyImg from "../src/assets/images/portfolio/spotify.jpg";
 import calculatorImg from "../src/assets/images/portfolio/calculator.jpg";
+import tapiterImg from "../src/assets/images/portfolio/tapiter.jpg";
+import lowgasImg from "../src/assets/images/portfolio/lowgas.jpg";
 
 const logotext = "AGUSTÍN GARCÍA";
 
@@ -109,7 +111,7 @@ const languages = [
 const servicesKeys = ["agmarketing", "apps", "programming"];
 const highlightKeys = ["wordpress", "react", "apps"];
 const processKeys = ["discover", "design", "build", "launch"];
-const featuredKeys = ["partfri", "guardify", "selectyourvet", "lechuzas"];
+const featuredKeys = ["partfri", "guardify", "lowgas", "tapiter"];
 const valueKeys = ["speed", "craft", "collab"];
 const testimonialKeys = ["one", "two", "three", "four", "five"];
 
@@ -134,6 +136,20 @@ const dataportfolio = [
     link: "https://ag-marketing.es/portfolio-item/guardify/",
     tags: ["React Native", "Expo", "Laravel", "IA"],
     category: "app",
+  },
+  {
+    key: "lowgas",
+    img: lowgasImg,
+    link: "https://lowcost.ag-marketing.es",
+    tags: ["Producto", "Maps", "Lenis", "AG Marketing"],
+    category: "code",
+  },
+  {
+    key: "tapiter",
+    img: tapiterImg,
+    link: "https://tapiter.es",
+    tags: ["Vite", "Frontend", "UX", "Marca"],
+    category: "code",
   },
   {
     key: "lechuzas",

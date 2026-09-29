@@ -271,10 +271,16 @@ const en = {
       v3nture:
         "V3B / V3nture Builders platform: custom plugin and web3 service search.",
       boconni: "Premium real estate with gallery and positioning.",
+      lowgas:
+        "Cheap gas-station map and ranking: Ministry prices, Google Routes minutes, in-app navigation, and CarPlay (AG Marketing).",
+      tapiter:
+        "Vite corporate site for a textiles manufacturer (upholstery, contract, fashion): brand, UX, and modern frontend.",
     },
     items: {
       partfri: "PartFri (iOS/Android App · AG Marketing)",
       guardify: "Guardify (React Native · Laravel · AI)",
+      lowgas: "LowGas (Maps · Product · AG Marketing)",
+      tapiter: "Tapiter (Vite · Frontend)",
       lechuzas: "Lechuzas Properties (Wordpress · Bookings)",
       selectyourvet: "Select Your Vet (Plugin + AI)",
       agmarketing: "AG Marketing (Corporate website)",
@@ -301,7 +307,7 @@ const en = {
     agmarketing: {
       title: "Websites & plugins (AG Marketing)",
       description:
-        "Wordpress/Elementor builds for real clients: SEO, animations, custom plugins, and integrations (Select Your Vet, Lechuzas, Dental Corbella, V3B, Waqua…).",
+        "Wordpress/Elementor builds and custom products for real clients: SEO, plugins, maps, and modern frontends (Select Your Vet, Lechuzas, LowGas, Tapiter…).",
     },
     apps: {
       title: "iOS & Android apps",
