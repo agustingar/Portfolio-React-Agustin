@@ -97,9 +97,38 @@
 .about_portrait {
   aspect-ratio: 4 / 5;
   border-radius: 1.15rem;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: #050505;
   box-shadow: 0 28px 60px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="light"] .about_portrait {
+  background: color-mix(in srgb, var(--secondary-color) 6%, var(--bg-color));
+}
+
+.about_portrait_img {
+  display: none;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  user-select: none;
+  pointer-events: none;
+}
+
+html:not([data-theme="light"]) .about_portrait_img--dark,
+[data-theme="dark"] .about_portrait_img--dark {
+  display: block;
+}
+
+[data-theme="light"] .about_portrait_img--light {
+  display: block;
 }
 
 .about_portrait_frame {

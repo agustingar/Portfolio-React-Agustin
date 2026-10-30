@@ -100,12 +100,22 @@ export const About = () => {
                   <div className="about_portrait_wrap">
                     <div
                       className="about_portrait"
-                      style={{
-                        backgroundImage: `url(${introdata.your_img_url})`,
-                      }}
                       role="img"
                       aria-label="Agustín García"
-                    />
+                    >
+                      <img
+                        className="about_portrait_img about_portrait_img--light"
+                        src={introdata.your_img_url}
+                        alt=""
+                        draggable={false}
+                      />
+                      <img
+                        className="about_portrait_img about_portrait_img--dark"
+                        src={introdata.your_img_url_dark}
+                        alt=""
+                        draggable={false}
+                      />
+                    </div>
                     <div className="about_portrait_frame" aria-hidden="true" />
                     <div className="about_now about_now--float">
                       <p className="about_now_label">{t("about.nowTitle")}</p>

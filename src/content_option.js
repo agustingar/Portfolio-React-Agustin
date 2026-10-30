@@ -1,4 +1,5 @@
-import img from "../src/assets/images/AG.PNG";
+import img from "../src/assets/images/AG-light.png";
+import imgDark from "../src/assets/images/AG-dark.png";
 import partfriImg from "../src/assets/images/portfolio/partfri.jpg";
 import guardifyImg from "../src/assets/images/portfolio/guardify.jpg";
 import lechuzasImg from "../src/assets/images/portfolio/lechuzas.jpg";
@@ -28,6 +29,7 @@ const logotext = "AGUSTÍN GARCÍA";
 
 const introdata = {
   your_img_url: `${img}`,
+  your_img_url_dark: `${imgDark}`,
 };
 
 const worktimeline = [

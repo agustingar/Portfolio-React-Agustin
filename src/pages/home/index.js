@@ -153,7 +153,6 @@ export const Home = () => {
           <motion.div
             className="h_bg-image order-1 order-lg-2 h-100"
             style={{
-              backgroundImage: `url(${introdata.your_img_url})`,
               y: imageY,
               scale: imageScale,
             }}
@@ -161,6 +160,19 @@ export const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.9, ease: EASE_OUT }}
           >
+            <img
+              className="h_bg_photo h_bg_photo--light"
+              src={introdata.your_img_url}
+              alt={t("home.title")}
+              draggable={false}
+            />
+            <img
+              className="h_bg_photo h_bg_photo--dark"
+              src={introdata.your_img_url_dark}
+              alt=""
+              aria-hidden="true"
+              draggable={false}
+            />
             <div className="h_bg_frame" aria-hidden="true" />
             <div className="h_bg_glow" aria-hidden="true" />
           </motion.div>

@@ -52,11 +52,14 @@ section {
     }
 
     .intro_sec .h_bg-image {
-        height: min(42vh, 320px);
-        min-height: 220px;
-        max-height: 340px;
+        height: min(48vh, 380px);
+        min-height: 260px;
+        max-height: 420px;
         margin-bottom: 1.25rem;
-        background-position: center 20%;
+    }
+
+    .intro_sec .h_bg-image .h_bg_photo {
+        max-height: 100%;
     }
 
     .intro_sec .h_bg-image .block {
@@ -144,10 +147,33 @@ section {
 }
 
 .intro_sec .h_bg-image {
-    background-size: cover;
-    background-position: center;
     min-height: 700px;
     position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.intro_sec .h_bg-image .h_bg_photo {
+    display: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 92%;
+    object-fit: contain;
+    object-position: center bottom;
+    user-select: none;
+    pointer-events: none;
+}
+
+html:not([data-theme="light"]) .intro_sec .h_bg-image .h_bg_photo--dark,
+[data-theme="dark"] .intro_sec .h_bg-image .h_bg_photo--dark {
+    display: block;
+}
+
+[data-theme="light"] .intro_sec .h_bg-image .h_bg_photo--light {
+    display: block;
 }
 
 .ac_btn {
